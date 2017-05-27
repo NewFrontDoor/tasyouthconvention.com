@@ -1,0 +1,36 @@
+{
+  "name": "tasyouthconvention.org",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "foundation-sites": "^6.3.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash-es": "^4.17.4",
+    "node-sass-chokidar": "^0.0.1",
+    "npm-run-all": "^4.0.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-async-script": "^0.9.1",
+    "react-dom": "^15.5.4",
+    "react-foundation": "^0.7.0",
+    "react-google-recaptcha": "^0.9.3",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-form": "^6.7.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.6"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
