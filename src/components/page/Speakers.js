@@ -10,7 +10,7 @@ export default () => (
         <div className="col-md-12">
           <div className="section-title">
             <h2 className="text-center"><span>Speakers</span></h2>
-            <p className="subtitle text-center">Satisne ergo pudori consulat, si quis sine teste libidini pareat</p>
+            <p className="subtitle text-center">TYC speakers are the hippest!</p>
             <p className="subtitle text-center"><i className="fa fa-angle-down fa-lg"></i></p>
           </div>
         </div>
@@ -22,13 +22,13 @@ export default () => (
             <figure className="speaker accent-bg">
               <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
               <figcaption>
-                <p className="text-uppercase accent">Tech Hall</p>
-                <p>04/10/2016 - 3PM</p>
+                <p className="text-uppercase accent">Speaker 1</p>
+                <p>Friday Evening</p>
               </figcaption>
             </figure>
             </a>
-            <p><span className="speaker-accent">Joshua Cull</span><br/>
-              Lean UX</p>
+            <p><span className="speaker-accent">Speaker 1</span><br/>
+              Speaker Topic</p>
           </div>
         </div>
         <div className="col-md-3 col-sm-6 text-center">
@@ -37,15 +37,15 @@ export default () => (
               <figure className="speaker accent-bg">
               <img src={speaker2} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
                 <figcaption>
-                  <p className="text-uppercase accent">Design Hall</p>
-                  <p>04/10/2016 - 3PM</p>
+                  <p className="text-uppercase accent">Speaker 2</p>
+                  <p>Saturday Afternoon</p>
                 </figcaption>
               </figure>
             </a>
             <p>
-              <span className="speaker-accent">Isabel Hudson</span>
+              <span className="speaker-accent">Speaker 2</span>
               <br/>
-              Freelancing is a great job
+              Get your life in gear
             </p>
           </div>
         </div>
@@ -55,20 +55,14 @@ export default () => (
               <figure className="speaker accent-bg">
                 <img src={speaker3} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
                 <figcaption>
-                  <p className="text-uppercase accent">Design Hall</p>
-                  <p>04/10/2016 - 3PM</p>
+                  <p className="text-uppercase accent">Speaker 3</p>
+                  <p>Saturday Evening</p>
                 </figcaption>
               </figure>
             </a>
-            <p><span className="speaker-accent">Fin Kerring</span><br/>
-              Handlettering Techniques</p>
+            <p><span className="speaker-accent">Speaker 3</span><br/>
+              Trials in Leviticus</p>
           </div>
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-md-12">
-          <p className="mrgn-50-top text-center"><a href="speakers.html" className="btn btn-main-ghost">See more speakers</a></p>
         </div>
       </div>
     </div>

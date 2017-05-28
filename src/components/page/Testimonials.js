@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './inner-logo-white.png';
+import logo from './tyc-white.png';
 
 export default () => (
   <section id="highlight">
@@ -19,22 +19,22 @@ export default () => (
             <p className="mrgn-20-btm"> <img src={logo} width="65" height="37" className="img-responsive" alt="New York Web Buzz" /></p>
             <p className="lead-sm text-uppercase"> is an inspirational event which will
               make you think, learn  and create. </p>
-            <p className="lead-sm text-uppercase"> Innovation is the key.<br/>
-              Knowledge is the source. <br/>
-              Creativity is the magic. <br/>
+            <p className="lead-sm text-uppercase"> Great Time.<br/>
+              Great Talks. <br/>
+              Great Fun. <br/>
             </p>
-            <p className="mrgn-20-top"><a href="speaker-details.html" className="btn btn-main-color">Speakers <i className="fa fa-long-arrow-right"></i></a></p>
+            <p className="mrgn-20-top"><a href="speaker-details.html" className="btn btn-main-color">Register Now <i className="fa fa-long-arrow-right"></i></a></p>
           </div>
         </div>
         <div className="col-md-6">
           <div className="dark-box pddn-50">
             <p className="mrgn-20-btm"> <img src={logo} width="65" height="37" className="img-responsive" alt="New York Web Buzz" /></p>
-            <p className="lead-sm text-uppercase">Listen to people like you will share experience leading to success </p>
-            <p className="lead-sm text-uppercase"> Success is the goal. <br/>
-              Experience is the medium. <br/>
-              Work is all you need to do. <br/>
+            <p className="lead-sm text-uppercase">Listen to people talk </p>
+            <p className="lead-sm text-uppercase"> Ipso Facto <br/>
+              Long Talks <br/>
+              Mare Nostrum <br/>
             </p>
-            <p className="mrgn-20-top"><a href="schedule.html" className="btn btn-main-color">Lectures <i className="fa fa-long-arrow-right"></i></a></p>
+            <p className="mrgn-20-top"><a href="schedule.html" className="btn btn-main-color">Find It <i className="fa fa-long-arrow-right"></i></a></p>
           </div>
         </div>
       </div>

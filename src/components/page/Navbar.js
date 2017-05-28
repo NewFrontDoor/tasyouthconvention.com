@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './inner-logo-white.png';
+import logo from './tyc-white.png';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import Scroll from 'react-scroll';
 
@@ -15,13 +15,17 @@ export default () => (
       <Navbar.Collapse>
         <Nav pullRight>
           <li role="presentation">
+            <Scroll.Link activeClass="active" to="highlight" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link>
+          </li>
+          <li role="presentation">
             <Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link>
           </li>
-          <NavItem eventKey={1} href="#speakers">Speakers</NavItem>
-          <NavItem eventKey={2} href="#highlight">Highlights</NavItem>
-          <NavItem eventKey={3} href="#schedule">Schedule</NavItem>
-          <NavItem eventKey={4} href="#pricing">Pricing</NavItem>
-          <NavItem eventKey={5} href="#location">Location</NavItem>
+          <li role="presentation">
+            <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Registration</Scroll.Link>
+          </li>
+          <li role="presentation">
+            <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link>
+          </li>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
