@@ -1,0 +1,31 @@
+import React from 'react';
+
+import ideas from './ideas.svg';
+import discussions from './discussions.svg';
+import exhibitions from './exhibitions.svg';
+import workshops from './workshops.svg';
+
+export default () => (
+  <section id="event-features">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-3 col-sm-6  col-xs-6"> <img src={ideas} width="49" height="80" className="img-responsive" alt="Ideas" />
+          <h2 className="accent">Ideas</h2>
+          <p> Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
+        </div>
+        <div className="col-md-3 col-sm-6  col-xs-6"> <img src={discussions} width="76" height="80" className="img-responsive" alt="Discussions" />
+          <h2 className="accent">Discussions</h2>
+          <p> Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
+        </div>
+        <div className="col-md-3 col-sm-6  col-xs-6"> <img src={exhibitions} width="76" height="80" className="img-responsive" alt="Exhibitions" />
+          <h2 className="accent">Exhibitions</h2>
+          <p> Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
+        </div>
+        <div className="col-md-3 col-sm-6  col-xs-6"> <img src={workshops} width="70" height="70" className="img-responsive" alt="Workshops" />
+          <h2 className="accent">Workshops</h2>
+          <p> Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+);

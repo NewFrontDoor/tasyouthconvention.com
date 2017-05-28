@@ -1,7 +1,6 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
-import { Button, Colors } from 'react-foundation';
 import ReCAPTHCA from './recaptcha';
 
 const RegisterGroupForm = ({ handleSubmit }) => {
@@ -21,7 +20,7 @@ const RegisterGroupForm = ({ handleSubmit }) => {
       <div>
         <Field name="recaptchaKey" component={ReCAPTHCA} />
       </div>
-      <Button color={Colors.SUCCESS} type="submit">Submit</Button>
+      <button className="btn btn-success" type="submit">Submit</button>
     </form>
   );
 }

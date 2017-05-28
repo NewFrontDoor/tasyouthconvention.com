@@ -2,18 +2,26 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 
-import Sidebar from './components/page/Sidebar';
-import Content from './components/page/Content';
-
-import { Row } from 'react-foundation';
+import Navbar from './components/page/Navbar';
+import Header from './components/page/Header';
+import ComingSoon from './components/page/ComingSoon';
+import Features from './components/page/Features';
+import Testimonials from './components/page/Testimonials';
+import Speakers from './components/page/Speakers';
+import Pricing from './components/page/Pricing';
 
 class App extends Component {
   render() {
     return (
-      <Row className={`App ${this.props.hideSidebar ? "hide-sidebar": ""}`} isExpanded>
-        <Sidebar toggleSidebar={this.props.toggleSidebar} />
-        <Content />
-      </Row>
+      <div id="page-wrapper">
+        <Navbar />
+        <ComingSoon />
+        <Header />
+        <Features />
+        <Testimonials />
+        <Speakers />
+        <Pricing />
+      </div>
     );
   }
 }

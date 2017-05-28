@@ -1,11 +1,7 @@
-@import "foundation-sites/scss/foundation";
+@import "frontpage.scss";
+@import "frontpage-map.scss";
 
-@include foundation-global-styles;
-@include foundation-flex-grid;
-@include foundation-flex-classes;
-@include foundation-button;
-@include foundation-forms;
-
+#root, #page-wrapper { height: 100%; }
 
 .row {
   max-width: 100%;
@@ -31,3 +27,6 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.navbar-nav li a { cursor: pointer; }
+#darknav.navbar-default .navbar-nav > li > a.active { background: transparent; color: #6C7A89; }

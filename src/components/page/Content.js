@@ -1,22 +1,18 @@
 import React from 'react';
-import { Column } from 'react-foundation';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import PeopleContainer from '../PeopleContainer';
-import BasicContentContainer from '../../containers/BasicContentContainer';
-
-import RegisterGroupForm from '../forms/register-group';
 
 import logo from './logo.svg';
 
 
-const formSubmit = (values) => {
-  console.log('form submitted');
-  console.log(values);
-};
+import AccommodationPage from '../pages/accommodation';
+import RegisterGroupPage from '../pages/register-group';
 
 export default () => {
   return (
-    <Column className="content">
+    <div className="content">
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Welcome to React</h2>
@@ -25,8 +21,13 @@ export default () => {
         To get started, edit <code>src/App.js</code> and save to reload.
       </p>
       <PeopleContainer />
-      <BasicContentContainer path="/accommodation" />
-      <RegisterGroupForm onSubmit={formSubmit} />
-    </Column>
+      <Router>
+        <div>
+          <Route exact path="/" component={AccommodationPage} />
+          <Route path="/accommodation" component={AccommodationPage} />
+          <Route path="/register-group" component={RegisterGroupPage} />
+        </div>
+      </Router>
+    </div>
   )
 }
