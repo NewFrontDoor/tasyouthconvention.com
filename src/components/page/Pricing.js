@@ -28,7 +28,7 @@ export default () => (
               <li>Access to all lectures </li>
               <li>A choice of 1 workshop</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><a href="#" className="btn btn-main-ghost">Book a Ticket</a></p>
+            <p className=" pddn-20-btm text-center"><a href="#tickets" className="btn btn-main-ghost">Book a Ticket</a></p>
           </div>
         </div>
         <div className="col-sm-4">
@@ -45,7 +45,7 @@ export default () => (
               <li>Access to all lectures </li>
               <li>A choice of 3 workshop</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><a href="#" className="btn btn-main-ghost">Book a Ticket</a></p>
+            <p className=" pddn-20-btm text-center"><a href="#tickets" className="btn btn-main-ghost">Book a Ticket</a></p>
           </div>
         </div>
         <div className="col-sm-4">
@@ -62,7 +62,7 @@ export default () => (
               <li>Access to all lectures </li>
               <li>Access to all workshops</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><a href="#" className="btn btn-main-ghost">Book a Ticket</a></p>
+            <p className=" pddn-20-btm text-center"><a href="#tickets" className="btn btn-main-ghost">Book a Ticket</a></p>
           </div>
         </div>
       </div>

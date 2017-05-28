@@ -4,7 +4,6 @@ import './App.css';
 
 import Navbar from './components/page/Navbar';
 import Header from './components/page/Header';
-import ComingSoon from './components/page/ComingSoon';
 import Features from './components/page/Features';
 import Testimonials from './components/page/Testimonials';
 import Speakers from './components/page/Speakers';
@@ -15,7 +14,6 @@ class App extends Component {
     return (
       <div id="page-wrapper">
         <Navbar />
-        <ComingSoon />
         <Header />
         <Features />
         <Testimonials />
