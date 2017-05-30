@@ -5,6 +5,8 @@ import './App.css';
 import Navbar from './components/page/Navbar';
 import Footer from './components/page/Footer';
 
+import Header from './components/pages/frontpage/Header';
+
 import AccommodationPage from './components/pages/accommodation';
 import FrontPage from './components/pages/front-page';
 import RegisterGroupPage from './components/pages/register-group';
@@ -15,17 +17,18 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div id="page-wrapper">
-        <Navbar />
-        <Router>
-          <div id="content-wrapper">
+      <Router>
+        <div id="content-wrapper">
+          <Navbar />
+          <Route exact path="/" component={Header} />
+          <div id="content-container">
             <Route exact path="/" component={FrontPage} />
             <Route path="/accommodation" component={AccommodationPage} />
             <Route path="/register-group" component={RegisterGroupPage} />
           </div>
-        </Router>
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

@@ -1,7 +1,9 @@
 @import "frontpage.scss";
 @import "frontpage-map.scss";
 
-#root, #page-wrapper, #content-wrapper, #front-page-container { min-height: 100%; height: auto !important; }
+#root, #content-wrapper { height: 100%; }
+#content-container { margin-top: 50px; }
+#front-page-container { margin-top: -50px; }
 
 .row {
   max-width: 100%;
