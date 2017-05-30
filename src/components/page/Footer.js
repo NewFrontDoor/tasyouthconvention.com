@@ -1,4 +1,5 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 
 export default () => (
   <footer>
@@ -6,12 +7,10 @@ export default () => (
       <div className="row">
         <div className="col-sm-8 col-md-9 col-lg-9">
           <ul className="list-inline">
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#highlight">Highlights</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#pricing">Tickets</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><Scroll.Link activeClass="active" to="highlight" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link></li>
           </ul>
           <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2017 - Tasmanian Youth Convention</p>
           <p className="copyright">Website by <a href="https://vision100it.org/">Vision 100 IT</a></p>

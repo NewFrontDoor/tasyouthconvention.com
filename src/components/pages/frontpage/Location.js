@@ -1,12 +1,11 @@
 /* global google */
-import React, { Component } from 'react';
+import React from 'react';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 import marker_url from './icons/marker.png';
 
 var $latitude = -41.872269,
-	$longitude = 148.304714,
-	$map_zoom = 14;
+	$longitude = 148.304714;
 
 var	$main_color = '#000000',
 	$saturation= -100,

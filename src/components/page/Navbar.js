@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo/tyc-white.png';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import Scroll from 'react-scroll';
 
 export default () => (
