@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ideas from './ideas.svg';
-import discussions from './discussions.svg';
-import exhibitions from './exhibitions.svg';
-import workshops from './workshops.svg';
+import ideas from './icons/ideas.svg';
+import discussions from './icons/discussions.svg';
+import exhibitions from './icons/exhibitions.svg';
+import workshops from './icons/workshops.svg';
 
 export default () => (
   <section id="event-features">

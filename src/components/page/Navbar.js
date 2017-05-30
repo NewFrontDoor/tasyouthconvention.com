@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './tyc-white.png';
+import logo from '../../images/logo/tyc-white.png';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import Scroll from 'react-scroll';
 
