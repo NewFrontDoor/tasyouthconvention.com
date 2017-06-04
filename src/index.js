@@ -10,10 +10,14 @@ import configureStore from './store/configure-store';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import { loadBasicContent } from './actions/content-actions';
+import { getLatestEventDetails } from './actions/event-details';
 
 const store = configureStore();
 
+store.dispatch(getLatestEventDetails());
+
 store.dispatch(loadBasicContent());
+
 
 ReactDOM.render(
   <Provider store={store}>
