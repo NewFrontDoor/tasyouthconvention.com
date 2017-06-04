@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default () => (
   <section id="pricing">
@@ -42,7 +43,7 @@ export default () => (
               <li>Register here for your</li>
               <li>youth group to attend TYC</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><a href="#tickets" className="btn btn-main-ghost">Register your Group</a></p>
+            <p className=" pddn-20-btm text-center"><Link to="/register-group" className="btn btn-main-ghost">Register your Group</Link></p>
           </div>
         </div>
       </div>
