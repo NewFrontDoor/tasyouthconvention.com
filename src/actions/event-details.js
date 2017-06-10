@@ -10,7 +10,6 @@ const receivedDetails = (details) => ({
   details: details
 });
 
-
 export const getLatestEventDetails = () => (dispatch) => {
   dispatch(requestingDetails());
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import MaskedInput from 'react-bootstrap-maskedinput';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+const siteKey = "6LfuIiMUAAAAAM5Cc8sN0IlN6ZrzxroMZdU44f9A";
+
 
 export const getValidationState = ({touched, error, warning}) => {
   if (!touched)
@@ -49,6 +53,22 @@ export const registerMobileNumberField = ({id, name, label, input, meta, placeho
         onBlur={input.onBlur}
         mask="1111 111 111"
         />
+      <div className="help-block">
+        {meta.touched ? meta.error : ""}
+      </div>
+  </FormGroup>
+)
+
+export const registerCaptcha = ({id, name, label, input, meta, placeholder, ...custom}) => (
+  <FormGroup
+    controlId={id}
+    validationState={getValidationState(meta)}
+    >
+    <ControlLabel>{label}</ControlLabel>
+      <ReCAPTCHA
+        sitekey={siteKey}
+        onChange={input.onChange}
+      />
       <div className="help-block">
         {meta.touched ? meta.error : ""}
       </div>
