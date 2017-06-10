@@ -1,5 +1,5 @@
 import * as types from './action-types';
-import fetch from 'isomorphic-fetch';
+import fetchFromApi from '../utils/fetchFromApi';
 
 const requestingDetails = () => ({
   type: types.REQUESTING_LATEST_EVENT_DETAILS
@@ -14,7 +14,6 @@ const receivedDetails = (details) => ({
 export const getLatestEventDetails = () => (dispatch) => {
   dispatch(requestingDetails());
 
-  return fetch('http://tasyouthconvention.vision100it.org/tyc/latest-event')
-    .then(response => response.json())
+  return fetchFromApi('/tyc/latest-event')
     .then(event => dispatch(receivedDetails(event[0])));
 }

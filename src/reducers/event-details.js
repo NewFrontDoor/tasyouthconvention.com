@@ -10,7 +10,7 @@ export default (state, action) => {
     case types.REQUESTING_LATEST_EVENT_DETAILS:
       return Object.assign({}, state, { loading: true });
     case types.RECEIVED_LATEST_EVENT_DETAILS:
-      return Object.assign({}, state, { loading: false, details: action.event });
+      return Object.assign({}, state, { loading: false, details: action.details });
     default:
       return state || initialState;
   }

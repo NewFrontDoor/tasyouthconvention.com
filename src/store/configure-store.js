@@ -9,7 +9,7 @@ export default (initialState) => {
     rootReducer,
     applyMiddleware(
       thunkMiddleware,
-      loggerMiddleware
+      //loggerMiddleware
     ),
     initialState
   );
