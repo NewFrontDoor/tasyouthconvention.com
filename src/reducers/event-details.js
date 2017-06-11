@@ -3,7 +3,8 @@ import moment from 'moment';
 
 const initialState = {
   loading: false,
-  details: {}
+  details: {},
+  registeredGroups: []
 }
 
 const normaliseEventDetails = (event) => ({
@@ -25,6 +26,8 @@ export default (state, action) => {
       return Object.assign({}, state, { loading: true });
     case types.RECEIVED_LATEST_EVENT_DETAILS:
       return Object.assign({}, state, { loading: false, details: normaliseEventDetails(action.details) });
+    case types.RECEIVED_GROUP_INFORMATION:
+      return Object.assign({}, state, { registeredGroups: action.groups });
     default:
       return state || initialState;
   }
@@ -56,3 +59,5 @@ export const getCurrentLeaderPrice = (state) => {
 export const getCurrentPrice = (state) => {
   return getPrice(state, 'earlyBirdPrice', 'standardPrice');
 }
+
+export const getGroups = (state) => state.eventDetails.registeredGroups;

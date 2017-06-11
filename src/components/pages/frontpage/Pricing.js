@@ -29,7 +29,7 @@ export default () => (
               <li>book and pay </li>
               <li>to attend TYC </li>
             </ul>
-            <p className=" pddn-20-btm text-center"><a href="#tickets" className="btn btn-main-ghost">Book a Ticket</a></p>
+            <p className=" pddn-20-btm text-center"><Link to="/register" className="btn btn-main-ghost">Register for TYC</Link></p>
           </div>
         </div>
         <div className="col-sm-6">

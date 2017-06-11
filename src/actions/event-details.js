@@ -10,9 +10,25 @@ const receivedDetails = (details) => ({
   details: details
 });
 
+const receivedGroupInfo = (groups) => ({
+  type: types.RECEIVED_GROUP_INFORMATION,
+  groups: groups
+});
+
 export const getLatestEventDetails = () => (dispatch) => {
   dispatch(requestingDetails());
 
-  return fetchFromApi('/tyc/latest-event')
-    .then(event => dispatch(receivedDetails(event[0])));
+  fetchFromApi('tyc/latest-event')
+    .then(events => {
+      const event = events[0]
+      dispatch(receivedDetails(event));
+
+      if (event.uuid !== undefined) {
+        fetchFromApi(`tyc/groups/${event.uuid}`)
+          .then(data => {
+            console.log('received data', data);
+            dispatch(receivedGroupInfo(data))
+          });
+      }
+    });
 }

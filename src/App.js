@@ -7,10 +7,13 @@ import Footer from './components/page/Footer';
 
 import Header from './components/pages/frontpage/Header';
 
-import AccommodationPage from './components/pages/accommodation';
 import FrontPage from './components/pages/front-page';
+import AccommodationPage from './components/pages/accommodation';
+
+
 import RegisterGroupPageContainer from './containers/RegisterGroupPageContainer';
-import RegisterPage from './components/pages/register';
+import RegisterIndividualContainer from './containers/RegisterPageContainer';
+
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -24,6 +27,7 @@ class App extends Component {
           <div id="content-container">
             <Route exact path="/" component={FrontPage} />
             <Route path="/accommodation" component={AccommodationPage} />
+            <Route path="/register" component={RegisterIndividualContainer} />
             <Route path="/register-group" component={RegisterGroupPageContainer} />
           </div>
           <Footer />

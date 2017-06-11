@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import Scroll from 'react-scroll';
 
@@ -28,3 +29,4 @@ export default () => (
     </div>
   </footer>
 )
+/* eslint-enable jsx-a11y/anchor-has-content */
