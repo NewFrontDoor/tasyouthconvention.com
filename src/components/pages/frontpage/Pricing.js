@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default () => (
+export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird, currentPrice, leaderPrice }) => (
   <section id="pricing">
     <div className="container">
       <div className="row">
@@ -17,12 +17,14 @@ export default () => (
       <div className="row">
         <div className="col-sm-6">
           <div className="white-bg">
-            <div className="ribbon-wrapper-dark">
-              <div className="ribbon-dark">Early Bird</div>
-            </div>
+            {isEarlyBird &&
+              <div className="ribbon-wrapper-dark">
+                <div className="ribbon-dark">Early Bird</div>
+              </div>
+            }
             <h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register for TYC</h3>
             <div className="accent-bg pddn-20-top-btm text-center">
-              <p className="price">$<span className="text-bigger">45</span></p>
+              <p className="price">$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : currentPrice}</span></p>
             </div>
             <ul className="list-pricing">
               <li>Register here </li>
@@ -34,16 +36,21 @@ export default () => (
         </div>
         <div className="col-sm-6">
           <div className="white-bg">
+            {isEarlyBird &&
+              <div className="ribbon-wrapper-dark">
+                <div className="ribbon-dark">Early Bird</div>
+              </div>
+            }
             <h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register Your Group</h3>
             <div className="accent-bg pddn-20-top-btm text-center">
-              <p className="price"><span className="text-bigger"><i className="fa fa-group"></i></span></p>
+              <p className="price">$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : leaderPrice}</span></p>
             </div>
             <ul className="list-pricing">
               <li>If you are a youth leader </li>
               <li>Register here for your</li>
               <li>youth group to attend TYC</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><Link to="/register-group" className="btn btn-main-ghost">Register your Group</Link></p>
+            <p className=" pddn-20-btm text-center"><Link to="/register-group" className="btn btn-main-ghost">Register As a Leader</Link></p>
           </div>
         </div>
       </div>

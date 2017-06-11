@@ -8,7 +8,7 @@ export default ({show, currentPrice, submitRegistration, registeredGroups}) => {
   return (
     <div>
       <p>Use this form to register for TYC.  If your youth group has been registered, they should appear in the list below.</p>
-      <p>The Current price to attend TYC is {accounting.formatMoney(currentPrice)}.</p>
+      <p>The Current price to attend TYC is {accounting.formatMoney(currentPrice)}</p>
       <RegisterIndividualForm onSubmit={submitRegistration} registeredGroups={registeredGroups} />
     </div>
   )

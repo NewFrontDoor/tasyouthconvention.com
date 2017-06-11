@@ -72,38 +72,36 @@ export const createGroupRegistration = (details, eventUuid, existingGroups) => (
 
     postEntityToApi(postData)
       .then(data => {
-        console.log('successfully saved the registration response was ', data);
         dispatch(savedRegistration(data));
       }).catch((ex) => {
-        console.log('problem saving the registration ', ex);
         dispatch(errorSavingRegistration(ex));
       });
   });
 }
 
-export const recordPaymentDetails = (paymentDetails, amountPaid, registrationId, givenName, familyName) => (dispatch) => {
+export const recordPaymentDetails = (paymentDetails, amountPaid, registrationUuid, givenName, familyName) => (dispatch) => {
   dispatch(savingPaymentDetails());
 
   const postData = Object.assign(
     getTypeObject('payment'),
+    getRelationshipObject('payment', [
+      {field:'field_registration', value: registrationUuid}
+    ]),
     mapFormValuesToHalFormat({
       field_payer_id: paymentDetails.payerID,
       field_payment_id: paymentDetails.paymentID,
       field_payment_token: paymentDetails.paymentToken,
       field_amount_paid: amountPaid,
-      field_registration_id: registrationId,
       field_given_name: givenName,
       field_family_name: familyName,
-      title: `Payment for Registration ${registrationId}`,
+      title: `Payment for ${givenName} ${familyName}`,
      })
   );
 
   postEntityToApi(postData)
     .then(data => {
-      console.log('successfully saved the payment as ', data);
       dispatch(savedPaymentDetails(data));
     }).catch((ex) => {
-      console.log('problem saving the registration ', ex);
       dispatch(errorSavingPaymentDetails(ex));
     });
 }

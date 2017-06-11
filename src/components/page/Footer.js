@@ -1,17 +1,38 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import Scroll from 'react-scroll';
+import { Link } from 'react-router-dom';
 
-export default () => (
+export default ({isFrontPage}) => (
   <footer>
     <div className="container">
       <div className="row">
         <div className="col-sm-8 col-md-9 col-lg-9">
           <ul className="list-inline">
-            <li><Scroll.Link activeClass="active" to="highlight" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link></li>
+            <li>
+              {isFrontPage ?
+                <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
+                <Link to="/#event-features">Highlights</Link>
+              }
+            </li>
+            <li>
+              {isFrontPage ?
+                <Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link> :
+                <Link to="/#speakers">Speakers</Link>
+              }
+            </li>
+            <li>
+              {isFrontPage ?
+                <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
+                <Link to="/#pricing">Register</Link>
+              }
+            </li>
+            <li>
+              {isFrontPage ?
+                <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
+                <Link to="/#location">Location</Link>
+              }
+            </li>
           </ul>
           <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2017 - Tasmanian Youth Convention</p>
           <p className="copyright">Website by <a href="https://vision100it.org/">Vision 100 IT</a></p>

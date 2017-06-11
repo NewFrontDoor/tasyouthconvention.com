@@ -25,7 +25,7 @@ const mergeProps = (stateProps, { dispatch }, ownProps) => {
   return {
     ...stateProps,
     submitRegistration: (details) => dispatch(createRegistration(details, stateProps.eventDetails.uuid)),
-    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.nid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value))
+    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.uuid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value))
   }
 };
 

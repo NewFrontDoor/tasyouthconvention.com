@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Features from './frontpage/Features';
-import Pricing from './frontpage/Pricing';
+import PricingContainer from '../../containers/PricingContainer';
 import Speakers from './frontpage/Speakers';
 import Location from './frontpage/Location';
 
@@ -13,7 +13,7 @@ export default () => (
     <Features />
     <Testimonials />
     <Speakers />
-    <Pricing />
+    <PricingContainer />
     <Location />
   </div>
 )

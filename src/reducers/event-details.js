@@ -2,7 +2,7 @@ import * as types from '../actions/action-types';
 import moment from 'moment';
 
 const initialState = {
-  loading: false,
+  loading: true,
   details: {},
   registeredGroups: []
 }
@@ -44,12 +44,17 @@ export const areRegistrationsOpen = (state) => {
 const getPrice = (state, earlyBirdKey, standardKey) => {
   if (areRegistrationsOpen(state)) {
     const eventDetails = state.eventDetails.details;
-    if (eventDetails.earlyBirdCutoffDate !== undefined && moment().isSameOrBefore(eventDetails.earlyBirdCutoffDate)) {
+    if (earlyBirdApplies(state)) {
       return eventDetails[earlyBirdKey];
     }
     return eventDetails[standardKey];
   }
   return null;
+}
+
+export const earlyBirdApplies = (state) => {
+  const eventDetails = state.eventDetails.details;
+  return areRegistrationsOpen(state) && eventDetails.earlyBirdCutoffDate !== undefined && moment().isSameOrBefore(eventDetails.earlyBirdCutoffDate);
 }
 
 export const getCurrentLeaderPrice = (state) => {

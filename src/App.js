@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import './App.css';
 
 import Navbar from './components/page/Navbar';
-import Footer from './components/page/Footer';
+import FrontPageFooter from './components/page/FrontPageFooter';
+import OtherPageFooter from './components/page/OtherPageFooter';
 
 import Header from './components/pages/frontpage/Header';
 
@@ -30,7 +31,8 @@ class App extends Component {
             <Route path="/register" component={RegisterIndividualContainer} />
             <Route path="/register-group" component={RegisterGroupPageContainer} />
           </div>
-          <Footer />
+          <Route exact path="/" component={FrontPageFooter} />
+          <Route path="/:path" component={OtherPageFooter} />
         </div>
       </Router>
     );

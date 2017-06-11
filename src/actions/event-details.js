@@ -26,7 +26,6 @@ export const getLatestEventDetails = () => (dispatch) => {
       if (event.uuid !== undefined) {
         fetchFromApi(`tyc/groups/${event.uuid}`)
           .then(data => {
-            console.log('received data', data);
             dispatch(receivedGroupInfo(data))
           });
       }

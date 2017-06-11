@@ -19,7 +19,6 @@ export const loadBasicContent = () => (dispatch) => {
 
   return fetchFromApi('basic-content')
     .then(json => {
-      console.log('received basic content from administrative site ', json);
       dispatch(receivedContent(json))
     });
 }

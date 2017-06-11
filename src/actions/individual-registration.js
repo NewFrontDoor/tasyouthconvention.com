@@ -1,6 +1,8 @@
 import { postEntityToApi } from '../utils/fetchFromApi';
 import { getTypeObject, getRelationshipObject, mapFormValuesToHalFormat } from '../utils/drupal';
 
+import { omit } from 'lodash';
+
 import * as types from './action-types';
 
 const savingRegistration = () => ({
@@ -38,45 +40,54 @@ export const resetGroupRegistration = () => ({
 export const createRegistration = (details, eventUuid) => (dispatch) => {
   dispatch(savingRegistration());
 
+  const relationshipMap = [
+    {field: 'field_event', value: eventUuid},
+  ];
+
+  if (!!details.field_youth_group && !details.field_no_youth_group) {
+    relationshipMap.push({field:'field_youth_group', value: details.field_youth_group})
+  }
+
   const postData = Object.assign(
     getTypeObject('registration'),
-    getRelationshipObject('registration', [{field: 'field_event', value: eventUuid}]),
-    mapFormValuesToHalFormat(details)
+    getRelationshipObject('registration', relationshipMap),
+    mapFormValuesToHalFormat(omit({
+      ...details,
+      title: `${details.field_given_name} ${details.field_family_name}`
+    }, 'field_youth_group'))
   );
 
   postEntityToApi(postData)
     .then(data => {
-      console.log('successfully saved the registration response was ', data);
       dispatch(savedRegistration(data));
     }).catch((ex) => {
-      console.log('problem saving the registration ', ex);
       dispatch(errorSavingRegistration(ex));
     });
 }
 
-export const recordPaymentDetails = (paymentDetails, amountPaid, registrationId, givenName, familyName) => (dispatch) => {
+export const recordPaymentDetails = (paymentDetails, amountPaid, registrationUuid, givenName, familyName) => (dispatch) => {
   dispatch(savingPaymentDetails());
 
   const postData = Object.assign(
     getTypeObject('payment'),
+    getRelationshipObject('payment', [
+      {field:'field_registration', value: registrationUuid}
+    ]),
     mapFormValuesToHalFormat({
       field_payer_id: paymentDetails.payerID,
       field_payment_id: paymentDetails.paymentID,
       field_payment_token: paymentDetails.paymentToken,
       field_amount_paid: amountPaid,
-      field_registration_id: registrationId,
       field_given_name: givenName,
       field_family_name: familyName,
-      title: `Payment for Registration ${registrationId}`,
+      title: `Payment for ${givenName} ${familyName}`,
      })
   );
 
   postEntityToApi(postData)
     .then(data => {
-      console.log('successfully saved the payment as ', data);
       dispatch(savedPaymentDetails(data));
     }).catch((ex) => {
-      console.log('problem saving the registration ', ex);
       dispatch(errorSavingPaymentDetails(ex));
     });
 }
