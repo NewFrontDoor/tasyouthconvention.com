@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 
-import Navbar from './components/page/Navbar';
-import FrontPageFooter from './components/page/FrontPageFooter';
-import OtherPageFooter from './components/page/OtherPageFooter';
+import { FrontPageNavbar, OtherPageNavbar } from './components/page/Navbar';
+import { FrontPageFooter, OtherPageFooter } from './components/page/Footer';
 
 import Header from './components/pages/frontpage/Header';
 
@@ -23,7 +22,8 @@ class App extends Component {
     return (
       <Router>
         <div id="content-wrapper">
-          <Navbar />
+          <Route exact path="/" component={FrontPageNavbar} />
+          <Route path="/:path" component={OtherPageNavbar} />
           <Route exact path="/" component={Header} />
           <div id="content-container">
             <Route exact path="/" component={FrontPage} />

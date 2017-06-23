@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../../images/logo/tyc-white.png';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Scroll from 'react-scroll';
 
-export default () => (
+const TycNav = ({isFrontPage}) => (
     <Navbar collapseOnSelect fixedTop id="darknav">
       <Navbar.Header>
         <Navbar.Toggle>
@@ -15,39 +16,38 @@ export default () => (
       <Navbar.Collapse>
         <Nav pullRight>
           <li role="presentation">
-            <Scroll.Link activeClass="active" to="highlight" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link>
+            {isFrontPage ?
+              <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
+              <Link to="/#event-features">Highlights</Link>
+            }
           </li>
           <li role="presentation">
-            <Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link>
+            {isFrontPage ?
+              <Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link> :
+              <Link to="/#speakers">Speakers</Link>
+            }
           </li>
           <li role="presentation">
-            <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Registration</Scroll.Link>
+            {isFrontPage ?
+              <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
+              <Link to="/#pricing">Register</Link>
+            }
           </li>
           <li role="presentation">
-            <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link>
+            {isFrontPage ?
+              <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
+              <Link to="/#location">Location</Link>
+            }
           </li>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
 )
 
-/*
-<nav id="darknav" className="navbar navbar-default navbar-fixed-top">
-<div className="container">
-  <div className="navbar-header page-scroll">
-    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span className="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-    <a className="navbar-brand" href="/"><img src={logo} class="img-responsive" alt="New York Web Buzz" width="65" height="37" /></a>
-  </div>
-  <div id="navbar" className="collapse navbar-collapse">
-    <ul className="nav navbar-nav navbar-right">
-      <li><a class="page-scroll" href="#speakers">Speakers</a></li>
-      <li><a class="page-scroll" href="#highlight">Highlights</a></li>
-      <li><a class="page-scroll" href="#schedule">Schedule</a></li>
-      <li><a class="page-scroll" href="#pricing">Tickets</a></li>
-      <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
-      <li><a class="page-scroll" href="#location">Location</a></li>
-    </ul>
-  </div>
-</div>
-</nav>
-*/
+export const FrontPageNavbar = () => (
+  <TycNav isFrontPage={true} />
+)
+
+export const OtherPageNavbar = () => (
+  <TycNav isFrontPage={false} />
+)

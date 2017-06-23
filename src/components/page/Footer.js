@@ -3,7 +3,7 @@ import React from 'react';
 import Scroll from 'react-scroll';
 import { Link } from 'react-router-dom';
 
-export default ({isFrontPage}) => (
+const Footer = ({isFrontPage}) => (
   <footer>
     <div className="container">
       <div className="row">
@@ -49,5 +49,13 @@ export default ({isFrontPage}) => (
       </div>
     </div>
   </footer>
+)
+
+export const FrontPageFooter = () => (
+  <Footer isFrontPage={true} />
+)
+
+export const OtherPageFooter = () => (
+  <Footer isFrontPage={false} />
 )
 /* eslint-enable jsx-a11y/anchor-has-content */
