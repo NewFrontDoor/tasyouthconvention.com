@@ -40,7 +40,7 @@ const TycNav = ({isFrontPage}) => (
             }
           </li>
         </Nav>
-      </Navbar.Collapse>
+    </Navbar.Collapse>
     </Navbar>
 )
 

@@ -20,8 +20,8 @@ export default class PaypalCheckout extends React.Component {
 
   payment(price) {
     return () => {
-      const env = this.props.env;
-      const client = ENV.paypalClientId;
+      const env = ENV.paypal.environment;
+      const client = ENV.paypal.clientId;
 
       return paypal.rest.payment.create(env, client, {
         transactions: [
@@ -34,10 +34,10 @@ export default class PaypalCheckout extends React.Component {
   }
 
   render() {
-    const client = ENV.paypalClientId;
-    console.log(this.props, this.props.price);
+    console.log(ENV.paypal.clientId, ENV.paypal.environment);
+    const client = ENV.paypal.clientId;
     return (
-      <PayPalButton env={'sandbox'}
+      <PayPalButton env={ENV.paypal.environment}
                     client={client}
                     payment={this.payment(this.props.price)}
                     commit={true}
