@@ -2,7 +2,7 @@
   "name": "tasyouthconvention.org",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vision100it.github.io/tasyouthconvention.com",
+  "homepage": "https://tyc.vision100it.org/",
   "dependencies": {
     "accounting": "^0.4.1",
     "babel-polyfill": "^6.23.0",
