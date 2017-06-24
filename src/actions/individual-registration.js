@@ -32,7 +32,7 @@ const savedPaymentDetails = (details) => ({
   type: types.SAVED_INDIVIDUAL_PAYMENT_DETAILS
 });
 
-export const resetGroupRegistration = () => ({
+export const resetIndividualRegistration = () => ({
   type: types.RESET_INDIVIDUAL_REGISTRATION
 });
 

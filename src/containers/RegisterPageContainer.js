@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import RegisterPage from '../components/pages/register';
 
-import { createRegistration, recordPaymentDetails } from '../actions/individual-registration';
+import { createRegistration, recordPaymentDetails, resetIndividualRegistration } from '../actions/individual-registration';
 
 import { INDIVIDUAL_REGISTRATION_STATE_KEY } from '../reducers/individual-registrations';
 
@@ -25,7 +25,8 @@ const mergeProps = (stateProps, { dispatch }, ownProps) => {
   return {
     ...stateProps,
     submitRegistration: (details) => dispatch(createRegistration(details, stateProps.eventDetails.uuid)),
-    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.uuid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value))
+    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.uuid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value)),
+    resetRegistration: () => dispatch(resetIndividualRegistration())
   }
 };
 
