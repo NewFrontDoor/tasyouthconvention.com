@@ -7,7 +7,7 @@ import SuccessSection from './registration/success-section';
 import LoadingMessage from '../messages/LoadingMessage';
 import ErrorMessage from '../messages/ErrorMessage';
 
-export default ({registrationState: {stage, errorDetails}, submitRegistration, submitPayment, loadingEventDetails, eventDetails, registrationsOpen, currentPrice, registeredGroups}) => {
+export default ({registrationState: {stage, errorDetails}, submitRegistration, submitPayment, resetRegistration, loadingEventDetails, eventDetails, registrationsOpen, currentPrice, registeredGroups}) => {
   return (
     <section className="container">
       <h3>Register as a youth group leader for Tasmanian Youth Convention</h3>
@@ -17,7 +17,7 @@ export default ({registrationState: {stage, errorDetails}, submitRegistration, s
             <div>
               <RegistrationSection show={stage === 'registration'} currentPrice={currentPrice} submitRegistration={submitRegistration} registeredGroups={registeredGroups} />
               <PaymentSection show={stage === 'payment'} currentPrice={currentPrice} submitPayment={submitPayment} />
-              <SuccessSection show={stage === 'finished'} isGroupRegistration={true} />
+              <SuccessSection show={stage === 'finished'} isGroupRegistration={true} resetRegistration={resetRegistration} />
               <ErrorMessage show={stage === 'error'}>There was an error saving your registration...</ErrorMessage>
               <LoadingMessage show={stage === 'savingRegistration'}>Saving your registration details...</LoadingMessage>
               <LoadingMessage show={stage === 'savingPayment'}>Saving your payment details.  Please wait for confirmation before leaving this page.</LoadingMessage>

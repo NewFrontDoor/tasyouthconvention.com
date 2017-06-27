@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import RegisterGroupPage from '../components/pages/register-group';
 
-import { createGroupRegistration, recordPaymentDetails } from '../actions/group-registration';
+import { createGroupRegistration, recordPaymentDetails, resetGroupRegistration } from '../actions/group-registration';
 
 import { GROUP_REGISTRATION_STATE_KEY } from '../reducers/group-registrations';
 
@@ -25,7 +25,8 @@ const mergeProps = (stateProps, { dispatch }, ownProps) => {
   return {
     ...stateProps,
     submitRegistration: (details) => dispatch(createGroupRegistration(details, stateProps.eventDetails.uuid, stateProps.registeredGroups)),
-    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.uuid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value))
+    submitPayment: (data) => dispatch(recordPaymentDetails(data, stateProps.amountOwing, stateProps.registrationDetails.uuid[0].value, stateProps.registrationDetails.field_given_name[0].value,  stateProps.registrationDetails.field_family_name[0].value)),
+    resetRegistration: () => dispatch(resetGroupRegistration())
   }
 };
 
