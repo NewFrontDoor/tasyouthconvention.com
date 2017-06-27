@@ -3,7 +3,6 @@ import React from 'react';
 import ideas from './icons/ideas.svg';
 import discussions from './icons/discussions.svg';
 import exhibitions from './icons/exhibitions.svg';
-import workshops from './icons/workshops.svg';
 
 export default () => (
   <section id="event-features">
