@@ -28,11 +28,11 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
               <p className="price">$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : currentPrice}</span></p>
             </div>
             <ul className="list-pricing">
-              <li>Register here </li>
-              <li>book and pay </li>
-              <li>to attend TYC </li>
+              <li>Register here to book and pay</li>
+              <li>for TYC once your youth group</li>
+              <li>has registered</li>
             </ul>
-            <p className=" pddn-20-btm text-center"><Link to="/register" className="btn btn-main-ghost">Register for TYC</Link></p>
+            <p className="pddn-20-btm text-center"><Link to="/register" className="btn btn-main-ghost">Register for TYC</Link></p>
           </div>
         </div>
         <div className="col-sm-6">
@@ -48,8 +48,8 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
             </div>
             <ul className="list-pricing">
               <li>If you are a youth leader </li>
-              <li>Register here for your</li>
-              <li>youth group to attend TYC</li>
+              <li>Register here.  This will also register your </li>
+              <li>Youth Group if they're not already registered</li>
             </ul>
             <p className=" pddn-20-btm text-center"><Link to="/register-group" className="btn btn-main-ghost">Register As a Leader</Link></p>
           </div>
