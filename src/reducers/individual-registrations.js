@@ -17,14 +17,12 @@ export default (state, action) => {
       return Object.assign({}, state, { stage: 'payment', details: action.details, registrationSaved: true });
     case types.ERROR_SAVING_INDIVIDUAL_REGISTRATION:
       return Object.assign({}, state, { stage: 'error', errorDetails: action.problem});
-
     case types.SAVING_INDIVIDUAL_PAYMENT_DETAILS:
       return Object.assign({}, state, { stage: 'savingPayment' });
     case types.ERROR_SAVING_INDIVIDUAL_PAYMENT_DETAILS:
       return Object.assign({}, state, { state: 'error', errorDetails: action.problem });
     case types.SAVED_INDIVIDUAL_PAYMENT_DETAILS:
       return Object.assign({}, state, { stage: 'finished', paymentDetails: action.details });
-
     case types.RESET_INDIVIDUAL_REGISTRATION:
       return initialState;
     default:
