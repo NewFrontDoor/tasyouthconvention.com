@@ -39,11 +39,7 @@ const Footer = ({isFrontPage}) => (
         </div>
         <div className="col-sm-4 col-md-3 col-lg-3">
           <ul className="list-inline social-buttons">
-            <li> <a className="fa fa-twitter fa-lg" href="https://www.facebook.com/designify.me"></a> </li>
-            <li> <a className="fa fa-facebook fa-lg" href="https://www.facebook.com/designify.me"></a> </li>
-            <li> <a className="fa fa-linkedin fa-lg" href="https://www.facebook.com/designify.me"></a> </li>
-            <li> <a className="fa fa-google-plus fa-lg" href="https://www.facebook.com/designify.me"></a> </li>
-            <li> <a className="fa fa-pinterest-p fa-lg" href="https://www.facebook.com/designify.me"></a> </li>
+            <li> <a className="fa fa-facebook fa-lg" href="https://www.facebook.com/tasyouth/"></a> </li>
           </ul>
         </div>
       </div>
