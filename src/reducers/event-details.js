@@ -11,7 +11,7 @@ const normaliseEventDetails = (event) => ({
   ...event,
   fromDate: moment(event.field_from_date),
   toDate: moment(event.field_to_date),
-  registrationStartDate: moment('2017-06-09T00:00:00'/*event.field_registration_open_date*/),
+  registrationStartDate: moment(event.field_registration_open_date),
   registrationCloseDate: moment(event.field_registration_close_date),
   earlyBirdCutoffDate: moment(event.field_early_bird_cutoff),
   earlyBirdLeaderPrice: parseFloat(event.field_early_bird_leader_price),
