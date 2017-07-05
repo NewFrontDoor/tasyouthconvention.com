@@ -432,7 +432,7 @@ header .header-text {padding-top: 100px;padding-bottom: 100px;}
 header h1 {font-size:48px;font-weight:300}
 header h2 {font-size:24px;font-weight:300}
 }
-header h3 span.date {border: 2px solid #FFF;padding: 10px;letter-spacing: 6px; display: inline-block;}
+header h3 span.date {border: 2px solid #FFF;padding: 10px;letter-spacing: 4px; display: inline-block; line-height: 1.5em;}
 /* ========== Hero Header ========== */
 header#hero{background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}
 header#hero .header-text{padding-top:100px;padding-bottom:50px}
@@ -441,72 +441,98 @@ header#hero .header-text {padding-top: 200px;padding-bottom:150px;}
 }
 
 /* Fullwidth Header */
-header#fullwidth{background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;}
-header#fullwidth {min-height: 100%; /* min. height for modern browser */ height:auto !important; /* important rule for modern Browser */   height:100%; /* min. height for IE */ overflow: hidden !important; /* FF scroll-bar */}
+header#fullwidth {
+  background-position:center center;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+  -o-background-size:cover;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  overflow: hidden !important;
 
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:28px;border: solid 2px white;color:#FFF;margin:20% auto 0 auto; width: 60%;}
-header#fullwidth h2 {text-transform:uppercase; font-weight:400; font-size:38px}
-header#fullwidth .sm-title {text-transform:uppercase; font-weight:700;font-size:18px}
+  h1 {
+    text-transform:uppercase;
+    font-weight:400;
+    font-size:28px;
+    border: solid 2px white;
+    color:#FFF;
+    margin:20% auto 0 auto;
+    width: 60%;
+    @media (min-width: 1280px) {
+      margin-top: 10%;
+    }
+    @media (max-width: 768px) {
+      margin-top:40%;
+      width: 80%;
+    }
+    @media (max-width: 640px) {
+      font-size:21px;
+      margin-top: 20%;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+      margin-top: 5px;
+    }
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+      margin-top: 2%;
+    }
+  }
 
-@media (min-width: 768px) {
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:28px;border: solid 2px white;color:#FFF;}
-header#fullwidth h2 {text-transform:uppercase; font-weight:400; font-size:48px}
-header#fullwidth .sm-title {text-transform:uppercase; font-weight:700;font-size:21px}
-}
+  h2 {
+    text-transform:uppercase;
+    font-weight:400;
+    font-size:38px;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+    @media (max-width: 640px) {
+      font-size: 24px;
+    }
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+      font-size: 21px;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+      font-size: 48px;
+    }
+  }
 
-header#fullwidth .header-text {position: relative;z-index: 20;padding: 10% 5% 0;height: 100%;}
+  .sm-title {
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:18px;
+    max-width: 60%;
+    margin: 10px auto 0;
 
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+      font-size: 21px;
+    }
+  }
 
-@media (max-width: 768px) {
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:21px;color:#FFF;margin-top:40%; width: 80%; }
-header#fullwidth h2 {text-transform:uppercase; font-weight:400; font-size:28px}
-header#fullwidth .sm-title {text-transform:uppercase; font-weight:700;font-size:12px}
-}
+  .header-text {
+    position: relative;
+    z-index: 20;
+    padding: 10% 5% 0;
+    height: 100%;
+  }
+  @media (max-width: 640px) {
+    padding: 10% 0% 0;
+  }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:28px;background:#6C7A89;color:#FFF}
-header#fullwidth h2 {text-transform:uppercase; font-weight:400; font-size:48px}
-header#fullwidth .sm-title {text-transform:uppercase; font-weight:700;font-size:21px}
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape)
-and (-webkit-min-device-pixel-ratio: 1)  {
-header#fullwidth h1 {text-transform: uppercase;font-weight: 400;font-size: 28px;background: #6C7A89;color: #FFF;margin-top: 5px;}
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio: 1)  {
-header#fullwidth h1 {text-transform: uppercase;font-weight: 400;font-size: 21px;color: #FFF;margin-top: 30%;}
-}
-
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : landscape) {
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:21px;color:#FFF;margin-top:5%}
-header#fullwidth h2 {text-transform: uppercase;font-weight: 400;font-size: 21px;}
-}
-
-@media (max-width: 640px) {
-header#fullwidth h1 {text-transform:uppercase;font-weight:400;font-size:21px;color:#FFF;margin-top:40%}
-header#fullwidth h2 {text-transform:uppercase; font-weight:400; font-size:24px}
-header#fullwidth .header-text {position: relative;z-index: 20;padding: 10% 0% 0;height: 100%;}
-}
-
-/* Small Hero Header */
-header#hero-sm{background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}
-header#hero-sm .header-text{padding-top:100px;padding-bottom:50px}
-@media(min-width:768px) {
-header#hero-sm .header-text {padding-top: 150px;padding-bottom: 100px;}
+  .arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    i {
+      top: 0px;
+    }
+  }
 }
 
 /* ========== Hero Backgrounds ========== */
@@ -517,7 +543,6 @@ header#hero-sm .header-text {padding-top: 150px;padding-bottom: 100px;}
 .speakerdetails {background-image: url(./images/backgrounds/black-and-white/speaker-detailsbg.jpg);}
 .blankbg {background-image: url(./images/backgrounds/black-and-white/buildingsbg.jpg);}
 .getstarted {background-image:url(./images/backgrounds/black-and-white/peoplebg.jpg);}
-
 
 /*********
 17.Section Full Schedule
