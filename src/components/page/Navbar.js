@@ -15,6 +15,12 @@ const TycNav = ({isFrontPage}) => (
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
+        <li role="presentation">
+          {isFrontPage ?
+            <Scroll.Link activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
+            <Link to="/#about-tyc">What is TYC?</Link>
+          }
+        </li>
           <li role="presentation">
             {isFrontPage ?
               <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
