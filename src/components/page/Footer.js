@@ -9,6 +9,12 @@ const Footer = ({isFrontPage}) => (
       <div className="row">
         <div className="col-sm-8 col-md-9 col-lg-9">
           <ul className="list-inline">
+          <li>
+            {isFrontPage ?
+              <Scroll.Link activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
+              <Link to="/#about-tyc">What Is TYC?</Link>
+            }
+          </li>
             <li>
               {isFrontPage ?
                 <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
@@ -34,8 +40,8 @@ const Footer = ({isFrontPage}) => (
               }
             </li>
           </ul>
-          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2017 - Tasmanian Youth Convention</p>
-          <p className="copyright">Website by <a href="https://vision100it.org/">Vision 100 IT</a></p>
+          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2018 - Tasmanian Youth Convention</p>
+          <p className="copyright">Website by <a href="https://newfrontdoor.org/">New Front Door</a></p>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-3">
           <ul className="list-inline social-buttons">

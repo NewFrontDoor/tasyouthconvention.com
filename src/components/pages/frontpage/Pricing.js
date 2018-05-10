@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import splash2 from './tyc-splash-background-2.jpg';
+import splash2 from './website4.jpg';
 
 export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird, currentPrice, leaderPrice }) => (
   <section id="pricing" style={{'backgroundImage': `url('${splash2}')`}}>
