@@ -11,37 +11,37 @@ const Footer = ({isFrontPage}) => (
           <ul className="list-inline">
           <li>
             {isFrontPage ?
-              <Scroll.Link activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
+              <Scroll.Link className="redLink" activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
               <Link to="/#about-tyc">What Is TYC?</Link>
             }
           </li>
             <li>
               {isFrontPage ?
-                <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
+                <Scroll.Link className="redLink" activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
                 <Link to="/#event-features">Highlights</Link>
               }
             </li>
             <li>
               {isFrontPage ?
-                <Scroll.Link activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link> :
+                <Scroll.Link className="redLink" activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link> :
                 <Link to="/#speakers">Speakers</Link>
               }
             </li>
             <li>
               {isFrontPage ?
-                <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
+                <Scroll.Link className="redLink" activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
                 <Link to="/#pricing">Register</Link>
               }
             </li>
             <li>
               {isFrontPage ?
-                <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
+                <Scroll.Link className="redLink" activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
                 <Link to="/#location">Location</Link>
               }
             </li>
           </ul>
           <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2018 - Tasmanian Youth Convention</p>
-          <p className="copyright">Website by <a href="https://newfrontdoor.org/">New Front Door</a></p>
+          <p className="copyright">Website by <a className="redLink" href="https://newfrontdoor.org/">New Front Door</a></p>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-3">
           <ul className="list-inline social-buttons">
