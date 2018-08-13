@@ -26,7 +26,8 @@ export default class PaypalCheckout extends React.Component {
       return paypal.rest.payment.create(env, client, {
         transactions: [
           {
-            amount: { total: `${price}`, currency: 'AUD'}
+            amount: { total: `${price}`, currency: 'AUD'},
+            description: "TYC Registration 2018"
           }
         ]
       });
