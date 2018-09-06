@@ -4,6 +4,7 @@ import { Field, reduxForm, formValueSelector } from 'redux-form';
 
 import { registerInputField, registerMobileNumberField, registerCaptcha, registerCheckbox, registerDropdown } from './redux-form-fields'
 import { map } from 'lodash';
+import {decode} from 'he';
 
 import * as val from './validations';
 
@@ -16,7 +17,7 @@ const validateForm = values => {
 }
 
 const RegisterIndividualForm = ({ handleSubmit, pristine, reset, submitting, noYouthGroup, youthGroup, registeredGroups }) => {
-  const mappedGroups = map(registeredGroups, g => ({ key: g.uuid, label: g.title }));
+  const mappedGroups = map(registeredGroups, g => ({ key: g.uuid, label: decode(g.title) }));
   return (
     <form onSubmit={handleSubmit}>
       <Field id="field_given_name" name="field_given_name" label="Given Name" component={registerInputField} validate={[val.required,val.minLength(2),val.maxLength(50)]} />
