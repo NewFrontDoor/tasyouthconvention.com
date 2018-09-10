@@ -391,6 +391,14 @@ section#location .embed-responsive-16by9{padding:10%}
 section#location .embed-responsive-16by9{padding:25%}
 }
 
+#contact-email{width:100%;bottom:0;left:0;padding:1em;background-color:rgba(143,73,73,0.9);color:#fff;font-size:13px;font-size:1.2rem;margin-bottom:0}
+@media only screen and (min-width: 768px) {
+#contact-email{font-size:15px;font-size:1.5rem;text-align:center;margin-bottom:0}
+}
+#contact-email a{
+color: #fff;
+}
+
 /*********
 13.Footer
 *********/
