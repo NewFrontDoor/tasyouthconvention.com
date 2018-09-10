@@ -4,6 +4,7 @@ import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 import marker_url from './icons/marker.png';
 
+
 var $latitude = -41.872269,
 	$longitude = 148.304714;
 
@@ -211,6 +212,9 @@ const StyledGoogleMap = withGoogleMap(props => (
 
 export default () => (
   <section id="location">
+  	<div id="contact-email">
+  		<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
+   	</div>
     <StyledGoogleMap
       containerElement={
         <div id="google-container"></div>
