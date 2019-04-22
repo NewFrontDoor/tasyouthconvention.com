@@ -1,6 +1,6 @@
 import React from 'react';
-//import speaker1 from './speakers/tyc-speaker-1.jpg';
-//import speaker2 from './speakers/tyc-speaker-2.jpg';
+import speaker1 from './speakers/tyc-speaker-1.png';
+import speaker2 from './speakers/tyc-speaker-2.png';
 
 
 export default () => (
@@ -17,15 +17,16 @@ export default () => (
       </div>
       <div className="row">
         <div className="col-sm-6 text-center">
-          {/*<div className="speaker-item">
+          <div className="speaker-item">
             <figure className="speaker accent-bg">
               <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
               <figcaption>
-                <p>Murray pastored a church in New Zealand for 10 years before coming to Australia in 2001. He is now the Principal of the Reformed Theological College in Melbourne where he helps train pastors, preachers and gospel workers. As well as loving his work, Murray enjoys good coffee, playing golf and spending time with his family. He’s married to Wendy and they have five children and one grandchild.</p>
+                <p>Mike Hall loves his family, fishing, football and Jesus. He has worked in both churches and the corporate sector. He is married to Helen and they have two young girls and a bulldog named Basil.</p>
               </figcaption>
             </figure>
-            <p><span className="speaker-accent">Murray Capill</span><br />
-              Principal, <a className="redLink" href="http://www.rtc.edu.au/" target="_blank" rel="noreferrer noopener">Reformed Theological College</a></p>
+            <p><span className="speaker-accent">Mike Hall</span><br />
+              {/*Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>*/}
+            </p>
           </div>
         </div>
         <div className="col-sm-6 text-center">
@@ -33,18 +34,16 @@ export default () => (
             <figure className="speaker accent-bg">
               <img src={speaker2} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
               <figcaption>
-                <p>Dave is married to Evthoxia and they have two boys Josh (16) and Alexis (14). They live in Margate Tasmania, along with Dave's American Staffordshire Bull Terrier (Bailey) and Alexi's Cat (Polly). Dave started out in full time ministry in the UK where he was mainly working with university students. Since then, he studied at Moore Theological College in Sydney, and for the last 9 years has been the Pastor of Summerleas Christian Church in Southern Tasmania. Dave has a passion for trying to push Christian community to the limits. In his spare time he enjoys bushwalking, listening to live music with Evthoxia, hanging out with his dog, playing guitar with Josh, watching Netflix with Alexis, collecting records, and desperately trying to earn his blue belt in Brazilian Jiu Jitsu.</p>
+                <p>Stu White is an AFES Campus Director at Monash University Melbourne. That means he leads a team of people in proclaiming Christ to the campus. His job is a great source of joy. Another great source of joy is his wife, Alicia, and their three kids. Apart from work, family, church and Netflix, he doesn’t do much but he would love to be someone who surfs and paints.</p>
               </figcaption>
             </figure>
             <p>
-              <span className="speaker-accent">Dave Lynch</span>
-              <br />
-              Pastor, <a className="redLink" href="https://summerleaschurch.org/" target="_blank" rel="noreferrer noopener">Summerleas Christian Church</a>
+              <span className="speaker-accent">Stu White</span><br />
+              {/*Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>*/}
             </p>
-          </div>*/}
+          </div>
 
         </div>
-        <div className="col-md-12 text-center"><em>Our speakers for this year will be announced soon.</em></div>
 
       </div>
     </div>
