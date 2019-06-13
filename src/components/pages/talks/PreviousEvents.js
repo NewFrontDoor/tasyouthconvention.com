@@ -3,7 +3,7 @@ import React from 'react';
 const DRUPAL_FILE_PREFIX = "https://tasyouthconvention.vision100it.org/sites/tasyouthconvention.vision100it.org/files/";
 
 export default () => (
-    <section id="speakers">
+    <section id="past-talks">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">

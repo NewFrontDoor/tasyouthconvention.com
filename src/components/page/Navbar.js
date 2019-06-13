@@ -50,6 +50,11 @@ const TycNav = ({ isFrontPage }) => (
         </li>
         <li role="presentation">
           {
+            <Link to="/FAQ">FAQ</Link>
+          }
+        </li>
+        <li role="presentation">
+          {
             <Link to="/Talks">Past Talks</Link>
           }
         </li>
