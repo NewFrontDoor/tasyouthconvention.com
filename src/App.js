@@ -8,6 +8,7 @@ import { FrontPageFooter, OtherPageFooter } from './components/page/Footer';
 import Header from './components/pages/frontpage/Header';
 
 import FrontPage from './components/pages/front-page';
+import TalksPage from './components/pages/talks/talks-page';
 import AccommodationPage from './components/pages/accommodation';
 
 
@@ -16,6 +17,7 @@ import RegisterIndividualContainer from './containers/RegisterPageContainer';
 
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import faqPage from './components/pages/faq/faq-page';
 
 class App extends Component {
   render() {
@@ -27,6 +29,8 @@ class App extends Component {
           <Route exact path="/" component={Header} />
           <div id="content-container">
             <Route exact path="/" component={FrontPage} />
+            <Route exact path="/Talks" component={TalksPage} />
+            <Route exact path="/FAQ" component={faqPage} />
             <Route path="/accommodation" component={AccommodationPage} />
             <Route path="/register" component={RegisterIndividualContainer} />
             <Route path="/register-group" component={RegisterGroupPageContainer} />

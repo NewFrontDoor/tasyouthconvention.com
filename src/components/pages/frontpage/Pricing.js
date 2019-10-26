@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import splash2 from './website1.jpg';
+import splash2 from './website2.jpg';
 
 export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird, currentPrice, leaderPrice }) => (
-  <section id="pricing" style={{'backgroundImage': `url('${splash2}')`}}>
+  <section id="pricing" style={{ 'backgroundImage': `url('${splash2}')` }}>
     <div className="container">
       <div className="row">
         <div className="col-md-12">

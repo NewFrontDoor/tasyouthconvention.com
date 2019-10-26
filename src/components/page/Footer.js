@@ -3,18 +3,18 @@ import React from 'react';
 import Scroll from 'react-scroll';
 import { Link } from 'react-router-dom';
 
-const Footer = ({isFrontPage}) => (
+const Footer = ({ isFrontPage }) => (
   <footer>
     <div className="container">
       <div className="row">
         <div className="col-sm-8 col-md-9 col-lg-9">
           <ul className="list-inline">
-          <li>
-            {isFrontPage ?
-              <Scroll.Link className="redLink" activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
-              <Link to="/#about-tyc">What Is TYC?</Link>
-            }
-          </li>
+            <li>
+              {isFrontPage ?
+                <Scroll.Link className="redLink" activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
+                <Link to="/#about-tyc">What Is TYC?</Link>
+              }
+            </li>
             <li>
               {isFrontPage ?
                 <Scroll.Link className="redLink" activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
@@ -40,12 +40,12 @@ const Footer = ({isFrontPage}) => (
               }
             </li>
           </ul>
-          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2018 - Tasmanian Youth Convention</p>
-          <p className="copyright">Website by <a className="redLink" href="https://newfrontdoor.org/">New Front Door</a></p>
+          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2019 - Tasmanian Youth Convention</p>
+          <p className="copyright">Website by <a className="redLink" href="https://newfrontdoor.org/" target="_blank" rel="noreferrer noopener">New Front Door</a></p>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-3">
           <ul className="list-inline social-buttons">
-            <li> <a className="fa fa-facebook fa-lg" href="https://www.facebook.com/tasyouth/"></a> </li>
+            <li> <a className="fa fa-facebook fa-lg" href="https://www.facebook.com/tasyouth/" target="_blank" rel="noreferrer noopener"></a> </li>
           </ul>
         </div>
       </div>

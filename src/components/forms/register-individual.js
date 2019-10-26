@@ -29,7 +29,7 @@ const RegisterIndividualForm = ({ handleSubmit, pristine, reset, submitting, noY
         <Field id="field_no_youth_group" name="field_no_youth_group" label="My youth group is not coming to TYC or I'm not a part of a youth group" placeholder="" component={registerCheckbox} />
       }
       {noYouthGroup &&
-        <p>We'd still love to have you at TYC.  Please contact us on Facebook or at tasyouthconvention@gmail.com and we'll sort out a youth group for you to come to TYC with.</p>
+        <p>We'd still love to have you at TYC.  Please contact us on Facebook or at tasyouthcon@gmail.com and we'll sort out a youth group for you to come to TYC with.</p>
       }
 
       <Field id="field_mobile_number" name="field_mobile_number" label="Your Mobile Number" placeholder="Mobile Number" component={registerMobileNumberField} validate={[val.required, val.validMobile]} />
