@@ -1,6 +1,6 @@
 import React from 'react';
-import speaker1 from './speakers/tyc-speaker-1.png';
-import speaker2 from './speakers/tyc-speaker-2.png';
+//import speaker1 from './speakers/tyc-speaker-1.png';
+//import speaker2 from './speakers/tyc-speaker-2.png';
 
 
 export default () => (
@@ -16,7 +16,8 @@ export default () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-6 text-center">
+        <div className="text-center"><em>Coming soon</em></div>
+        {/*<div className="col-sm-6 text-center">
           <div className="speaker-item">
             <figure className="speaker accent-bg">
               <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
@@ -24,9 +25,9 @@ export default () => (
                 <p>Mike Hall loves his family, fishing, football and Jesus. He has worked in both churches and the corporate sector. He is married to Helen and they have two young girls and a bulldog named Basil.</p>
               </figcaption>
             </figure>
-            {/*<p><span className="speaker-accent">Mike Hall</span><br />
+            <p><span className="speaker-accent">Mike Hall</span><br />
               Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>
-            </p>*/}
+            </p>
           </div>
         </div>
         <div className="col-sm-6 text-center">
@@ -37,13 +38,13 @@ export default () => (
                 <p>Stu White is an AFES Campus Director at Monash University Melbourne. That means he leads a team of people in proclaiming Christ to the campus. His job is a great source of joy. Another great source of joy is his wife, Alicia, and their three kids. Apart from work, family, church and Netflix, he doesn’t do much but he would love to be someone who surfs and paints.</p>
               </figcaption>
             </figure>
-            {/*<p>
+            <p>
               <span className="speaker-accent">Stu White</span><br />
               Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>
-            </p>*/}
+            </p>
           </div>
 
-        </div>
+        </div>*/}
 
       </div>
     </div>
