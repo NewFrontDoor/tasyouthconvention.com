@@ -9,6 +9,8 @@ export default () => (
         <div className="col-md-12">
           <div className="section-title">
             <h2 className="text-center"><span>What is TYC?</span></h2>
+            <p className="subtitle text-center"><em>Due to the strangeness of 2020 TYC will run as two once off events in Hobart and Launceston in local Churches.</em></p>
+
             <p className="subtitle text-center">Tas Youth Convention is for grades 9-12 held each year on the weekend before Term 4 commences.
             Over the weekend we&apos;ll have sessions where we get stuck into the Bible, pray and sing
             but the rest of the time is yours to shape into a youth group retreat of your own making.
