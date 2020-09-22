@@ -741,4 +741,43 @@ section#faq {background:#EFEFEF}
 a.redLink {color:#0af9fa !important;}
 @media (max-width: 767px){
   .hideForMobile {display: none !important;}
+  .event-locations>h3{
+    margin-top: 50px !important;
+  }
+}
+.event-locations{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  h3>span{
+    min-width: 395px;
+  }
+  h3>span>a{
+    color: #fff;
+  }
+}
+@media (max-width: 900px){
+  .event-locations{
+    margin-top: 25px;
+  }
+  .event-locations>h3{
+    margin-top: 50px !important;
+  }
+  
+}
+
+@media (max-width: 700px){
+  .event-locations{
+    margin: 0;
+  }
+.event-locations>h3>span{
+ min-width: 300px;
+}
+}
+
+@media (max-width: 500px){
+.event-locations>h3>span{
+ min-width: initial;
+}
 }
