@@ -40,7 +40,7 @@ const Footer = ({ isFrontPage }) => (
               }
             </li>
           </ul>
-          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2020 - Tasmanian Youth Convention</p>
+          <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2021 - Tasmanian Youth Convention</p>
           <p className="copyright">Website by <a className="redLink" href="https://newfrontdoor.org/" target="_blank" rel="noreferrer noopener">New Front Door</a></p>
         </div>
         <div className="col-sm-4 col-md-3 col-lg-3">
