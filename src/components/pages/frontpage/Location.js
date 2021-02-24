@@ -192,7 +192,7 @@ const marker = {
 		defaultAnimation: 2
 };
 
-const StyledGoogleMap = withGoogleMap(props => (
+const StyledGoogleMap = withGoogleMap(props => ( //eslint-disable-line
   <GoogleMap
     defaultZoom={14}
     defaultCenter={props.center}
