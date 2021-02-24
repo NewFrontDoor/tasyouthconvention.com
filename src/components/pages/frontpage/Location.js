@@ -192,7 +192,7 @@ const marker = {
 		defaultAnimation: 2
 };
 
-const StyledGoogleMap = withGoogleMap(props => (
+const StyledGoogleMap = withGoogleMap(props => ( //eslint-disable-line
   <GoogleMap
     defaultZoom={14}
     defaultCenter={props.center}
@@ -215,7 +215,7 @@ export default () => (
   	<div id="contact-email">
   		<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
    	</div>
-    <StyledGoogleMap
+    {/*<StyledGoogleMap
       containerElement={
         <div id="google-container"></div>
       }
@@ -226,6 +226,6 @@ export default () => (
     />
     <address>
     78 Burgess Street, Bicheno, Tasmania
-    </address>
+    </address>*/}
   </section>
 )
