@@ -70,10 +70,11 @@ export const recordPaymentDetails = (paymentDetails, amountPaid, registrationUui
 
   const postData = Object.assign(
     getTypeObject('payment'),
-    getRelationshipObject('payment', [
+    /*getRelationshipObject('payment', [
       {field:'field_registration', value: registrationUuid}
-    ]),
+    ]),*/
     mapFormValuesToHalFormat({
+      field_registration_id: registrationUuid,
       field_payer_id: paymentDetails.payerID,
       field_payment_id: paymentDetails.paymentID,
       field_payment_token: paymentDetails.paymentToken,

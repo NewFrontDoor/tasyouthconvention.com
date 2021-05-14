@@ -5,8 +5,12 @@ import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import marker_url from './icons/marker.png';
 
 
+/*Bicheno location
 var $latitude = -41.872269,
 	$longitude = 148.304714;
+*/
+var $latitude = -41.928891,
+	$longitude = 147.495207;
 
 var	$main_color = '#000000',
 	$saturation= -100,
@@ -225,7 +229,8 @@ export default () => (
       center={new google.maps.LatLng($latitude, $longitude)}
     />
     <address>
-    78 Burgess Street, Bicheno, Tasmania
+    {/*78 Burgess Street, Bicheno, Tasmania */}
+	The Grange, Campbell Town, Tasmania
     </address>
   </section>
 )

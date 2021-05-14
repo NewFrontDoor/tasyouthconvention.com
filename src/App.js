@@ -18,6 +18,7 @@ import RegisterIndividualContainer from './containers/RegisterPageContainer';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import faqPage from './components/pages/faq/faq-page';
+import RegisterYouthLeaderTrainingPageContainer from './containers/RegisterYouthLeaderTrainingPageContainer';
 
 class App extends Component {
   render() {
@@ -32,8 +33,11 @@ class App extends Component {
             <Route exact path="/Talks" component={TalksPage} />
             <Route exact path="/FAQ" component={faqPage} />
             <Route path="/accommodation" component={AccommodationPage} />
+            {/*TYC Weekend
             <Route path="/register" component={RegisterIndividualContainer} />
             <Route path="/register-group" component={RegisterGroupPageContainer} />
+            */}
+            <Route path="/register-tylt" component={RegisterYouthLeaderTrainingPageContainer} />
           </div>
           <Route exact path="/" component={FrontPageFooter} />
           <Route path="/:path" component={OtherPageFooter} />

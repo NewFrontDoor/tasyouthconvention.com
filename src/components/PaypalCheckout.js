@@ -27,7 +27,7 @@ export default class PaypalCheckout extends React.Component {
         transactions: [
           {
             amount: { total: `${price}`, currency: 'AUD'},
-            description: "TYC Registration 2021"
+            description: "TYC Registration"
           }
         ]
       });

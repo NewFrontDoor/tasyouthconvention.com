@@ -9,7 +9,7 @@ const Footer = ({ isFrontPage }) => (
       <div className="row">
         <div className="col-sm-8 col-md-9 col-lg-9">
           <ul className="list-inline">
-            <li>
+            {/*<li>
               {isFrontPage ?
                 <Scroll.Link className="redLink" activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
                 <Link to="/#about-tyc">What Is TYC?</Link>
@@ -26,7 +26,7 @@ const Footer = ({ isFrontPage }) => (
                 <Scroll.Link className="redLink" activeClass="active" to="speakers" spy={true} smooth={true} offset={-50} duration={500}>Speakers</Scroll.Link> :
                 <Link to="/#speakers">Speakers</Link>
               }
-            </li>
+            </li>*/}
             <li>
               {isFrontPage ?
                 <Scroll.Link className="redLink" activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
