@@ -9,7 +9,7 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
         <div className="col-md-12">
           <div className="section-title-white">
             <h2 className="text-center"><span>Registration</span></h2>
-            <p className="subtitle white text-center">Register here for the TYC Roadshow</p>
+            <p className="subtitle white text-center">Register here for TYC</p>
             <p className="subtitle text-center"><i className="fa fa-angle-down fa-lg white"></i></p>
           </div>
         </div>
@@ -23,16 +23,16 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
                 <div className="ribbon-dark">Early Bird</div>
               </div>
             }
-            <h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register for TYC Roadshow</h3>
+            <h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register for TYC</h3>
             <div className="accent-bg pddn-20-top-btm text-center">
               <p className="price">$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : currentPrice}</span></p>
             </div>
             <ul className="list-pricing">
               <li>Register here to book and pay</li>
-              <li>for TYC Roadshow once your youth group</li>
+              <li>for TYC once your youth group</li>
               <li>has registered</li>
             </ul>
-            <p className="pddn-20-btm text-center"><Link to="/register" className="btn btn-main-ghost">Register for TYC Roadshow</Link></p>
+            <p className="pddn-20-btm text-center"><Link to="/register" className="btn btn-main-ghost">Register for TYC</Link></p>
           </div>
         </div>
         <div className="col-sm-6">
