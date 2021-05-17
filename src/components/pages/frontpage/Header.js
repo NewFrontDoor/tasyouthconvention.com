@@ -3,11 +3,15 @@ import tycsplash from './TYC Roadshow_Background.png';
 
 export default () => (
   <header id="fullwidth" className="homepage" style={{ 'backgroundImage': `url('${tycsplash}')` }}>
-    <div className="header-text white text-center text-uppercase">
-      <h1 className="titlebg pddn-20-top pddn-20-btm">Tas Youth Leader Training</h1>
+    <div className="header-text white text-center">
+      <h1 className="titlebg pddn-20-top pddn-20-btm text-uppercase">Tas Youth Leader Training</h1>
       {/*<h2>Dead or Alive</h2>*/}
       <h2></h2>
-      <h3 className="mrgn-50-top white sm-title"><span className="date">19th June<br/>The Grange, Campbell Town</span></h3>
+      <h3 className="pddn-20-top white text-uppercase"><span className="date">19th June<br/>
+      The Grange, Campbell Town<br/>
+      10am – 5pm<br/>
+      $40 - includes morning + afternoon tea and lunch</span></h3>
+      <h3 className="mrgn-50-top white"><span className="header-subtext">As a TYC team we value the contribution youth leaders in Tasmania make to the lives of the youth in our state, and that is why we've organised our first ever Tasmanian Youth Leader Training (TYLT) event. This conference will include a sermon and workshop by our guest speaker Alex Zunica from St Jude’s Church Melbourne, plus multiple electives, singing and discussions, with the entire day focused on the theme of discipleship.</span></h3>
       {/*<div className="event-locations">
       <h3 className="white sm-title">
         <span className="date">26<sup>th</sup> March 7pm - 930pm<br/><br/>

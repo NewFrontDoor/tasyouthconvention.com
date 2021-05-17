@@ -30,7 +30,7 @@ export default () => (
                     {/*<p className="subtitle">Tas Youth Convention is covered by public liability insurance through our connection to The Vison 100 Network.</p>*/}
 
                     <h3 className="pddn-30-top">Theological Basis and Denominational Standpoint</h3>
-                    <p className="subtitle">TYC aims to centre everything around God’s word. Every year we draw our theme from the books of the Bible. If you have any specific questions on our theological convictions, please email <a href="mailto:tom@tasyouthconvention.org">tom@tasyouthconvention.org</a></p>
+                    <p className="subtitle">TYC aims to centre everything around God’s word. Every year we draw our theme from the books of the Bible. If you have any specific questions on our theological convictions, please email <a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a></p>
                     <p className="subtitle">We aim to focus on what unifies us as Christians. TYC is multi-denominational event and this is represented in those that attend – we have youth coming from Reformed, Anglican, Baptist, Presbyterian and Pentecostal Churches.</p>
                 </div>
 
