@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <header id="fullwidth" className="homepage">
+  <header className="fullwidth homepage">
     <div className="content-overlay-counter text-center">
       <div className="row">
         <div className="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">

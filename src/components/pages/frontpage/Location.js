@@ -219,7 +219,7 @@ export default () => (
   	<div id="contact-email">
   		<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
    	</div>
-    <StyledGoogleMap
+    	 {/*( <StyledGoogleMap
       containerElement={
         <div id="google-container"></div>
       }
@@ -229,8 +229,7 @@ export default () => (
       center={new google.maps.LatLng($latitude, $longitude)}
     />
     <address>
-    {/*78 Burgess Street, Bicheno, Tasmania */}
 	The Grange, Campbell Town, Tasmania
-    </address>
+    </address>)*/}
   </section>
 )
