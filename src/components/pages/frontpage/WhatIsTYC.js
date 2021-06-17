@@ -8,13 +8,14 @@ export default () => (
       <div className="row">
         <div className="col-md-12">
           <div className="section-title">
-            <h2 className="text-center"><span>What is TYC?</span></h2>
-            <p className="subtitle text-center">Tas Youth Convention is for grades 9-12 held each year on the weekend before Term 4 commences.
-            Over the weekend we&apos;ll have sessions where we get stuck into the Bible, pray and sing
-            but the rest of the time is yours to shape into a youth group retreat of your own making.
-            Over the years, many young people have found TYC to be a significant point in their relationship
-            with Jesus and it is our prayer that it will continue to be that for many more. We provide the talks,
-            music and venue (and morning tea on Saturday and Sunday) and youth groups organise their own food and accommodation.  </p>
+          <h2 className="text-center"><span>Who are We?</span></h2>
+                    <p className="subtitle">The Tasmanian Youth Convention is run by a small committee of volunteers. TYC events are made possible through the hard work of our local team, partnered churches and youth groups along with their leaders.</p>
+                    <p className="subtitle">We think Jesus is the answer and solution to the biggest questions and problems. He’s the best news anyone can hear!</p>
+                    <p className="subtitle">Our central desire is to see young people in our state seriously engage with the Gospel about Jesus; to consider what it would look like to follow Him all their lives. Our goal is to offer to them a clear, biblical picture of exactly such a life so that they can consider this.</p>
+                    <p className="subtitle">We draw our vision statement from the words of Jesus in Mark 8:34-35 <em>“Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me and for the gospel will save it.”</em></p>
+                    <p className="subtitle">TYC exists under <a href="https://vision100.org" rel="noreferrer noopener" target="_blank">The Vision 100 Network</a>.</p>
+                    <p className="subtitle">We share their vision of gathering and resourcing a network of churches and church leaders while raising up and training the next generation of church leaders to plant evangelistic, church-planting churches.</p>
+                    <p className="subtitle">We hope that in building up young Christians, we are establishing a future for ministry in our state.</p>
           </div>
         </div>
       </div>

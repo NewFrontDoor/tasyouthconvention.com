@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Pricing from '../components/pages/frontpage/PricingYouthLeaderTraining';
+import Pricing from '../components/pages/tylt/PricingYouthLeaderTraining';
 
 import { areRegistrationsOpen, getCurrentLeaderPrice, getCurrentPrice, earlyBirdApplies } from '../reducers/youth-training-event-details';
 

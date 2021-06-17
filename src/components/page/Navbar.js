@@ -10,18 +10,18 @@ const TycNav = ({ isFrontPage }) => (
       <Navbar.Toggle>
       </Navbar.Toggle>
       <Navbar.Brand>
-        <a href="/"><img src={logo} className="img-responsive" alt="New York Web Buzz" width="65" height="37" /></a>
+        <a href="/"><img src={logo} className="img-responsive" alt="Tasmanian Youth Convention" width="65" height="37" /></a>
       </Navbar.Brand>
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        {/*<li role="presentation">
+        {<li role="presentation">
           {isFrontPage ?
-            <Scroll.Link activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>What is TYC?</Scroll.Link> :
-            <Link to="/#about-tyc">What is TYC?</Link>
+            <Scroll.Link activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>About</Scroll.Link> :
+            <Link to="/#about-tyc">About</Link>
           }
         </li>
-        <li role="presentation">
+        /*<li role="presentation">
           {isFrontPage ?
             <Scroll.Link activeClass="active" to="event-features" spy={true} smooth={true} offset={-50} duration={500}>Highlights</Scroll.Link> :
             <Link to="/#event-features">Highlights</Link>
@@ -35,14 +35,8 @@ const TycNav = ({ isFrontPage }) => (
         </li>*/}
         <li role="presentation">
           {isFrontPage ?
-            <Scroll.Link activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
-            <Link to="/#pricing">Register</Link>
-          }
-        </li>
-        <li role="presentation">
-          {isFrontPage ?
-            <Scroll.Link activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
-            <Link to="/#location">Location</Link>
+            <Scroll.Link activeClass="active" to="events" spy={true} smooth={true} offset={-50} duration={500}>Events</Scroll.Link> :
+            <Link to="/#events">Events</Link>
           }
         </li>
         <li role="presentation" className="hideForMobile">

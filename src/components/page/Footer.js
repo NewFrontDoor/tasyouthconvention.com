@@ -29,15 +29,21 @@ const Footer = ({ isFrontPage }) => (
             </li>*/}
             <li>
               {isFrontPage ?
-                <Scroll.Link className="redLink" activeClass="active" to="pricing" spy={true} smooth={true} offset={-50} duration={500}>Register</Scroll.Link> :
-                <Link to="/#pricing">Register</Link>
+                <Scroll.Link className="redLink" activeClass="active" to="about-tyc" spy={true} smooth={true} offset={-50} duration={500}>About</Scroll.Link> :
+                <Link className="redLink" to="/#about-tyc">About</Link>
               }
             </li>
             <li>
               {isFrontPage ?
-                <Scroll.Link className="redLink" activeClass="active" to="location" spy={true} smooth={true} offset={-50} duration={500}>Location</Scroll.Link> :
-                <Link to="/#location">Location</Link>
+                <Scroll.Link className="redLink" activeClass="active" to="events" spy={true} smooth={true} offset={-50} duration={500}>Events</Scroll.Link> :
+                <Link className="redLink" to="/#events">Events</Link>
               }
+            </li>
+            <li>
+              <Link className="redLink" to="/FAQ">FAQ</Link>
+            </li>
+            <li>
+              <Link className="redLink" to="/talks">Past Talks</Link>
             </li>
           </ul>
           <p className="copyright">Copyright <i className="fa fa-copyright"></i> 2021 - Tasmanian Youth Convention</p>
@@ -46,6 +52,7 @@ const Footer = ({ isFrontPage }) => (
         <div className="col-sm-4 col-md-3 col-lg-3">
           <ul className="list-inline social-buttons">
             <li> <a className="fa fa-facebook fa-lg" href="https://www.facebook.com/tasyouth/" target="_blank" rel="noreferrer noopener"></a> </li>
+            <li> <a className="fa fa-instagram fa-lg" href="https://www.instagram.com/tasyouthcon/" target="_blank" rel="noreferrer noopener"></a> </li>
           </ul>
         </div>
       </div>
