@@ -10,7 +10,7 @@ export default () => (
       <div id="events" className="row">
         <EventItem title='Roadshow South' path='#roadshow-south' date="Date TBA" location="Hobart" registrationsOpen={false}  />
         <EventItem title='Roadshow North' path='#roadshow-north' date="Date TBA" location="Launceston" registrationsOpen={false}  />
-        <EventItem title='TYLT' path='tylt' date="19th June 2021" location="Campbell Town" registrationsOpen={true}  />
+        <EventItem title='TYLT' path='tylt' date="19th June 2021" location="Campbell Town" registrationsOpen={false}  />
         <EventItem title='TYC Weekend' path='#tyc-weekend' date="8th-10th October 2021" location="Bicheno" registrationsOpen={false}  />  
       </div>
       </div>
