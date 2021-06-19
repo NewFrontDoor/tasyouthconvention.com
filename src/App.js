@@ -6,7 +6,6 @@ import { FrontPageNavbar, OtherPageNavbar } from './components/page/Navbar';
 import { FrontPageFooter, OtherPageFooter } from './components/page/Footer';
 
 import TYLTHeader from './components/pages/tylt/Header';
-import FrontPageHeader from './components/pages/frontpage/Header';
 
 import FrontPage from './components/pages/frontpage';
 import TYLTPage from './components/pages/tylt';
@@ -31,7 +30,6 @@ class App extends Component {
         <div id="content-wrapper">
           <Route exact path="/" component={FrontPageNavbar} />
           <Route path="/:path" component={OtherPageNavbar} />
-          {/*<Route exact path="/" component={FrontPageHeader} />*/}
           <div id="content-container">
             <Route exact path="/" component={FrontPage} />
             <Route exact path="/tylt" component={TYLTHeader} />
