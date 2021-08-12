@@ -1,5 +1,5 @@
 import React from 'react';
-//import speaker1 from './speakers/tyc-speaker-1.png';
+import speaker1 from './speakers/Reuben.png';
 //import speaker2 from './speakers/tyc-speaker-2.png';
 
 
@@ -10,42 +10,35 @@ export default () => (
         <div className="col-md-12">
           <div className="section-title">
             <h2 className="text-center"><span>Speakers</span></h2>
-            <p className="subtitle text-center">Come and meet our TYC speakers for this year!</p>
+            <p className="subtitle text-center">Come and meet our TYC speaker for this year!</p>
             <p className="subtitle text-center"><i className="fa fa-angle-down fa-lg"></i></p>
           </div>
         </div>
       </div>
       <div className="row">
-        <div className="text-center"><em>Coming soon</em></div>
-        {/*<div className="col-sm-6 text-center">
-          <div className="speaker-item">
-            <figure className="speaker accent-bg">
-              <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
-              <figcaption>
-                <p>Mike Hall loves his family, fishing, football and Jesus. He has worked in both churches and the corporate sector. He is married to Helen and they have two young girls and a bulldog named Basil.</p>
-              </figcaption>
-            </figure>
-            <p><span className="speaker-accent">Mike Hall</span><br />
-              Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>
-            </p>
+        <div className="col-sm-12">
+          <div className="col-sm-3"></div>
+          <div className="col-sm-6 text-center">
+            <div className="speaker-item">
+              <figure className="speaker accent-bg hideForSM">
+                <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
+                <figcaption>
+                  <p>I’m Reuben, a 28 year old mainlander from Geelong, Victoria. This year I moved to Launceston to work as an apprentice pastor at Riverbank Christian Church... and I’m learning that Tassie people are pretty alright! I’ve been married to the lovely Sjaan for nearly 8 years and our boy Ravi is one year old. I like to drink coffee, play music, and hang out with friends and family. My biggest passion is Jesus. I’m repeatedly amazed at how much he loves me and I’m excited about what he is doing in our world. I still can’t believe I get paid to do what I love: preach the Bible and help people to follow Jesus!</p>
+                </figcaption>
+              </figure>
+              <figure className="showForSM">
+                <img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
+                <figcaption>
+
+                </figcaption>
+              </figure>
+              <p><span className="speaker-accent">Reuben Capill</span><br />
+                Apprentice Pastor, <a className="redLink" href="https://www.riverbankcc.org.au/" target="_blank" rel="noreferrer noopener">Riverbank Christian Church</a>
+              </p>
+              <p className="showForSM">I’m Reuben, a 28 year old mainlander from Geelong, Victoria. This year I moved to Launceston to work as an apprentice pastor at Riverbank Christian Church... and I’m learning that Tassie people are pretty alright! I’ve been married to the lovely Sjaan for nearly 8 years and our boy Ravi is one year old. I like to drink coffee, play music, and hang out with friends and family. My biggest passion is Jesus. I’m repeatedly amazed at how much he loves me and I’m excited about what he is doing in our world. I still can’t believe I get paid to do what I love: preach the Bible and help people to follow Jesus!</p>
+            </div>
           </div>
         </div>
-        <div className="col-sm-6 text-center">
-          <div className="speaker-item">
-            <figure className="speaker accent-bg">
-              <img src={speaker2} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
-              <figcaption>
-                <p>Stu White is an AFES Campus Director at Monash University Melbourne. That means he leads a team of people in proclaiming Christ to the campus. His job is a great source of joy. Another great source of joy is his wife, Alicia, and their three kids. Apart from work, family, church and Netflix, he doesn’t do much but he would love to be someone who surfs and paints.</p>
-              </figcaption>
-            </figure>
-            <p>
-              <span className="speaker-accent">Stu White</span><br />
-              Title, <a className="redLink" href="http://website" target="_blank" rel="noreferrer noopener">Website</a>
-            </p>
-          </div>
-
-        </div>*/}
-
       </div>
     </div>
 

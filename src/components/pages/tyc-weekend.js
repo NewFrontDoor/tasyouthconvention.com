@@ -9,9 +9,9 @@ import WhatIsTYC from './tyc-weekend/WhatIsTYC';
 export default () => (
   <div id="front-page-container">
     {/*<WhatIsTYC />*/}
-    {/*<Features />/*}
-    {/*<Speakers />*/}
-    <PricingContainer/>
+    {/*<Features />*/}
+    <Speakers />
+    <PricingContainer />
     <Location />
   </div>
 )

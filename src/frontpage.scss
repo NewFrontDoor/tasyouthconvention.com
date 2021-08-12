@@ -738,6 +738,14 @@ section#about-tyc {background:#EFEFEF}
 section#past-talks {background:#EFEFEF}
 section#faq {background:#EFEFEF}
 a.redLink {color:#d86e30 !important;}
+@media (min-width: 992px){
+  .showForSM {display: none !important;}
+  .hideForSM {display: inline-block !important;}
+}
+@media (max-width: 991px){
+  .showForSM {display: inline-block !important; }
+  .hideForSM {display: none !important;}
+}
 @media (max-width: 767px){
   .hideForMobile {display: none !important;}
   .event-locations>h3{
