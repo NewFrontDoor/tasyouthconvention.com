@@ -23,7 +23,7 @@ export default ({registrationState: {stage, errorDetails}, submitRegistration, s
               <LoadingMessage show={stage === 'savingPayment'}>Saving your payment details.  Please wait for confirmation before leaving this page.</LoadingMessage>
             </div> :
           <div className="alert alert-warning">
-            Registrations for TYC are not currently open. These will open on {eventDetails.registrationStartDate ? eventDetails.registrationStartDate.format('DD/MM/YYYY') : ''}.
+            Registrations for TYLT are not currently open.
           </div>
         )
       }

@@ -34,7 +34,7 @@ export default (state, action) => {
 }
 
 export const areRegistrationsOpen = (state) => {
-  const eventDetails = state.eventDetails.details;
+  const eventDetails = state.youthTrainingEventDetails.details;
   if (eventDetails.registrationStartDate !== undefined && eventDetails.registrationCloseDate !== undefined) {
     return moment().isSameOrAfter(eventDetails.registrationStartDate) && moment().isSameOrBefore(eventDetails.registrationCloseDate);
   }
