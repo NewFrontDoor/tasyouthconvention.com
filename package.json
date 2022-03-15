@@ -10,7 +10,7 @@
     "he": "^1.1.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
-    "lodash-es": "^4.17.4",
+    "lodash-es": "^4.17.21",
     "moment": "^2.18.1",
     "node-sass-chokidar": "^0.0.1",
     "npm-run-all": "^4.0.2",
