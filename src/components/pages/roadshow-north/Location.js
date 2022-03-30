@@ -5,9 +5,13 @@ import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import marker_url from '../../../images/icons/marker.png';
 
 
-var $latitude = -41.872269,
-	$longitude = 148.304714;
+/*Aiden's hall
+var $latitude = -41.438951,
+	$longitude = 147.153126;*/
 
+//St Johns Anglican Church, 157 St John St
+var $latitude = -41.4399866,
+	$longitude = 147.1393178;
 
 var $main_color = '#000000',
 	$saturation = -100,
@@ -216,8 +220,7 @@ export default () => (
 		<div id="contact-email">
 			<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
 		</div>
-
-		( <StyledGoogleMap
+		<StyledGoogleMap
 			containerElement={
 				<div id="google-container"></div>
 			}
@@ -227,7 +230,7 @@ export default () => (
 			center={new google.maps.LatLng($latitude, $longitude)}
 		/>
 		<address>
-			78 Burgess Street, Bicheno, Tasmania
-		</address>)
+			157 St John Street, Launceston
+		</address>
 	</section>
 )

@@ -8,7 +8,9 @@ const fetchSessionToken = () => {
 }
 
 const fetchFromApi = (url, ...args) => {
-  return fetch(`${ENV.BASE_API_URL}${url}?_format=json`, ...args).then(response => response.json());
+  return fetch(`${ENV.BASE_API_URL}${url}?_format=json`, ...args).then(response => {
+    return response.json()
+  });
 };
 
 export const postToApi = (url, postData) => {
@@ -29,7 +31,7 @@ export const postEntityToApi = (postData) => {
 }
 
 export const fetchText = (url, ...args) => {
-  return fetch(`${ENV.BASE_API_URL}${url}`,...args);
+  return fetch(`${ENV.BASE_API_URL}${url}`, ...args);
 };
 
 export default fetchFromApi;
