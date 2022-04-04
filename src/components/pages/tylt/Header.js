@@ -1,5 +1,5 @@
 import React from 'react';
-import tycsplash from '../../../images/TYC Roadshow_Background.png';
+import tycsplash from '../../../images/backgrounds/TYC 2022 Background.png';
 
 export default () => (
   <header className="fullwidth homepage" style={{ 'backgroundImage': `url('${tycsplash}')` }}>
