@@ -11,7 +11,7 @@
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
     "lodash-es": "^4.17.4",
-    "moment": "^2.18.1",
+    "moment": "^2.29.2",
     "node-sass-chokidar": "^0.0.1",
     "npm-run-all": "^4.0.2",
     "paypal-checkout": "^4.0.82",
