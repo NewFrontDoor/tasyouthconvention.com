@@ -2,45 +2,45 @@
 import React from 'react';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
-import marker_url from './icons/marker.png';
+import marker_url from '../../../images/icons/marker.png';
 
 
 var $latitude = -41.872269,
 	$longitude = 148.304714;
 
 
-var	$main_color = '#000000',
-	$saturation= -100,
-	$brightness= 10;
+var $main_color = '#000000',
+	$saturation = -100,
+	$brightness = 10;
 
 var mapStyle = [
 	{
 		elementType: "labels",
 		stylers: [
-			{saturation: $saturation}
+			{ saturation: $saturation }
 		]
 	},
-    {
+	{
 		featureType: "poi",
 		elementType: "labels",
 		stylers: [
-			{visibility: "off"}
+			{ visibility: "off" }
 		]
 	},
 	{
 		//don't show highways lables on the map
-        featureType: 'road.highway',
-        elementType: 'labels',
-        stylers: [
-            {visibility: "off"}
-        ]
-    },
+		featureType: 'road.highway',
+		elementType: 'labels',
+		stylers: [
+			{ visibility: "off" }
+		]
+	},
 	{
 		//don't show local road lables on the map
 		featureType: "road.local",
 		elementType: "labels.icon",
 		stylers: [
-			{visibility: "off"}
+			{ visibility: "off" }
 		]
 	},
 	{
@@ -48,7 +48,7 @@ var mapStyle = [
 		featureType: "road.arterial",
 		elementType: "labels.icon",
 		stylers: [
-			{visibility: "off"}
+			{ visibility: "off" }
 		]
 	},
 	{
@@ -56,7 +56,7 @@ var mapStyle = [
 		featureType: "road",
 		elementType: "geometry.stroke",
 		stylers: [
-			{visibility: "off"}
+			{ visibility: "off" }
 		]
 	},
 	//style different elements on the map
@@ -183,51 +183,51 @@ var mapStyle = [
 ];
 
 const marker = {
-  	position: {
-			lat: $latitude,
-			lng: $longitude
-		},
-    visible: true,
- 		icon: marker_url,
-		key: 'TYC',
-		defaultAnimation: 2
+	position: {
+		lat: $latitude,
+		lng: $longitude
+	},
+	visible: true,
+	icon: marker_url,
+	key: 'TYC',
+	defaultAnimation: 2
 };
 
 const StyledGoogleMap = withGoogleMap(props => ( //eslint-disable-line
-  <GoogleMap
-    defaultZoom={14}
-    defaultCenter={props.center}
-    defaultOptions={{
-      styles: mapStyle,
-      panControl: false,
-      zoomControl: false,
-      mapTypeControl: false,
-      streetViewControl: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      scrollwheel: false
-    }}
-  >
-    <Marker {...marker} />
-  </GoogleMap>
+	<GoogleMap
+		defaultZoom={14}
+		defaultCenter={props.center}
+		defaultOptions={{
+			styles: mapStyle,
+			panControl: false,
+			zoomControl: false,
+			mapTypeControl: false,
+			streetViewControl: false,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false
+		}}
+	>
+		<Marker {...marker} />
+	</GoogleMap>
 ));
 
 export default () => (
-  <section id="location">
-  	<div id="contact-email">
-  		<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
-   	</div>
-   
-	 ( <StyledGoogleMap
-      containerElement={
-        <div id="google-container"></div>
-      }
-      mapElement={
-        <div style={{ height: `100%` }} />
-      }
-      center={new google.maps.LatLng($latitude, $longitude)}
-    />
-    <address>
-		78 Burgess Street, Bicheno, Tasmania
-    </address>)
-  </section>
+	<section id="location">
+		<div id="contact-email">
+			<a href="mailto:tasyouthcon@gmail.com">tasyouthcon@gmail.com</a>
+		</div>
+
+		( <StyledGoogleMap
+			containerElement={
+				<div id="google-container"></div>
+			}
+			mapElement={
+				<div style={{ height: `100%` }} />
+			}
+			center={new google.maps.LatLng($latitude, $longitude)}
+		/>
+		<address>
+			78 Burgess Street, Bicheno, Tasmania
+		</address>)
+	</section>
 )

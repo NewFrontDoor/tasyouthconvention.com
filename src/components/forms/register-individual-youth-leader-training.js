@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm, formValueSelector } from 'redux-form';
 
-import { registerInputField, registerMobileNumberField, registerCaptcha, registerCheckbox, registerDropdown } from './redux-form-fields'
-import { map } from 'lodash';
-import {decode} from 'he';
+import { registerInputField, registerMobileNumberField, registerCaptcha, registerCheckbox, registerDropdown } from './redux-form-fields' //eslint-disable-line
+//import { map } from 'lodash';
+//import {decode} from 'he';
 
 import * as val from './validations';
 
