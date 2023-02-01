@@ -17,24 +17,33 @@ export default () => (
 				<EventItem
 					title="Roadshow North"
 					path="roadshow-north"
-					date="1st April 2022"
+					date="24th March 2023"
 					location="Launceston"
 					registrationsOpen={false}
+					showMoreInfo={false}
 				/>
 				<EventItem
 					title="Roadshow South"
 					path="roadshow-south"
-					date="8th April 2022"
+					date="31st March 2023"
 					location="Hobart"
 					registrationsOpen={false}
+					showMoreInfo={false}
 				/>
-				<EventItem title="TYLT" path="tylt" date="18th June 2022" location="Campbell Town" registrationsOpen={false} />
+				<EventItem title="TYLT" 
+					path="tylt" 
+					date="17th June 2023" 
+					location="Campbell Town" 
+					registrationsOpen={false} 
+					showMoreInfo={false} 
+				/>
 				<EventItem
 					title="TYC Weekend"
 					path="tyc-weekend"
-					date="14th-16th October 2022"
+					date="October 2023 (Dates TBA)"
 					location="Bicheno"
-					registrationsOpen={true}
+					registrationsOpen={false}
+					showMoreInfo={false}
 				/>
 			</div>
 		</div>
