@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export default ({title, path, registrationsOpen, date, location}) => (
+export default ({title, path, registrationsOpen, date, location, showMoreInfo}) => (
   <div className="col-sm-3 col-xs-8 event">
     <div style={{backgroundColor: `${registrationsOpen ? '#fff' : 'rgba(20,20,20, 0.92'}`}}>
       <h3 className={`text-center pddn-20-top pddn-10-btm`} style={{color: `${registrationsOpen? '#333' : '#737373'}`}}>Registrations {registrationsOpen ? 'Open' : 'Closed'}</h3>
@@ -12,7 +12,7 @@ export default ({title, path, registrationsOpen, date, location}) => (
         <li>{date}</li>
         <li>{location}</li>
       </ul>
-      <p className=" pddn-20-btm text-center"><Link to={`/${path}`} className="btn btn-main-ghost">More Info</Link></p> 
+      <p className=" pddn-20-btm text-center">{showMoreInfo && <Link to={`/${path}`} className="btn btn-main-ghost">More Info</Link>}</p>
     </div>
   </div>
 )
