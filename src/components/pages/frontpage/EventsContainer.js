@@ -35,8 +35,8 @@ export default () => (
 					path="tylt"
 					date="17th June 2023"
 					location="Campbell Town"
-					registrationsOpen={false}
-					showMoreInfo={false}
+					registrationsOpen={true}
+					showMoreInfo={true}
 				/>
 				<EventItem
 					title="TYC Weekend"
