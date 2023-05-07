@@ -15,7 +15,7 @@ export default () => (
 					<br />
 					10AM – 5PM
 					<br />
-					$15 - INCLUDES MORNING + AFTERNOON TEA AND LUNCH
+					$25 - INCLUDES MORNING + AFTERNOON TEA AND LUNCH
 				</span>
 			</h3>
 			<h3 className="mrgn-50-top white">
