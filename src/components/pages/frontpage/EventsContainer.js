@@ -34,7 +34,7 @@ export default () => (
 					title="TYLT"
 					path="tylt"
 					date="17th June 2023"
-					location="Campbell Town"
+					location="Launceston"
 					registrationsOpen={true}
 					showMoreInfo={true}
 				/>

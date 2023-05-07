@@ -5,25 +5,25 @@ export default () => (
 	<header className="fullwidth homepage" style={{ backgroundImage: `url('${tycsplash}')` }}>
 		<div className="header-text white text-center">
 			<h1 className="titlebg pddn-20-top pddn-20-btm text-uppercase">Tas Youth Leader Training</h1>
-			{/*<h2>Dead or Alive</h2>*/}
+			<h2>Who are we? Identity and Belonging</h2>
 			<h2> </h2>
 			<h3 className="mrgn-50-top white text-uppercase">
 				<span className="date">
 					17th June
 					<br />
-					The Grange, Campbell Town
+					Riverbank Christian Church, Launceston
 					<br />
 					10AM – 5PM
 					<br />
-					$40 - INCLUDES MORNING + AFTERNOON TEA AND LUNCH
+					$15 - INCLUDES MORNING + AFTERNOON TEA AND LUNCH
 				</span>
 			</h3>
 			<h3 className="mrgn-50-top white">
 				<span className="header-subtext">
 					As a TYC team we value the contribution youth leaders in Tasmania make to the lives of the youth in our state,
-					and that is why we've organised our first ever Tasmanian Youth Leader Training (TYLT) event. This conference
-					will include a sermon and workshop by our guest speaker Graham Poole, plus multiple electives, singing and
-					discussions, with the entire day focused on the theme of discipleship.
+					and that is why we've organised our Tasmanian Youth Leader Training (TYLT) event. This conference will include
+					a sermon and workshop by our guest speaker Graham Poole, plus multiple electives, singing and discussions,
+					with the entire day focused on the theme of discipleship.
 				</span>
 			</h3>
 			{/*<div className="event-locations">
