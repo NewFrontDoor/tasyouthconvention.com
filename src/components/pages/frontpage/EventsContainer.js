@@ -19,7 +19,7 @@ export default () => (
 					path="roadshow-north"
 					date="24th March 2023"
 					location="Launceston"
-					registrationsOpen={true}
+					registrationsOpen={false}
 					showMoreInfo={true}
 				/>
 				<EventItem
@@ -27,7 +27,7 @@ export default () => (
 					path="roadshow-south"
 					date="31st March 2023"
 					location="Hobart"
-					registrationsOpen={true}
+					registrationsOpen={false}
 					showMoreInfo={true}
 				/>
 				<EventItem
@@ -35,16 +35,17 @@ export default () => (
 					path="tylt"
 					date="17th June 2023"
 					location="Launceston"
-					registrationsOpen={true}
+					registrationsOpen={false}
 					showMoreInfo={true}
 				/>
 				<EventItem
 					title="TYC Weekend"
-					path="tyc-weekend"
-					date="October 2023 (Dates TBA)"
+					// path="tyc-weekend"
+					path="https://form.jotform.com/231877550172863"
+					date="October 2023"
 					location="Bicheno"
-					registrationsOpen={false}
-					showMoreInfo={false}
+					registrationsOpen={true}
+					showMoreInfo={true}
 				/>
 			</div>
 		</div>
