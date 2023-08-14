@@ -41,11 +41,14 @@ export default () => (
 				<EventItem
 					title="TYC Weekend"
 					// path="tyc-weekend"
-					path="https://form.jotform.com/231877550172863"
+					path="tyc-weekend"
 					date="October 2023"
 					location="Bicheno"
 					registrationsOpen={true}
 					showMoreInfo={true}
+					showSignUpNow={true}
+					signUpNowPath="https://form.jotform.com/231877550172863"
+					signUpDisplayText={"Sign your group up now"}
 				/>
 			</div>
 		</div>

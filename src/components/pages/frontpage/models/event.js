@@ -2,21 +2,40 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const renderMoreInfo = (path) => {
-	if (path.startsWith("http")) {
+	if(path){
+		if (path.startsWith("http")) {
+			return (
+				<a href={`${path}`} className="btn btn-main-ghost" target="_blank" rel="noopener noreferrer">
+					More Info
+				</a>
+			);
+		}
 		return (
-			<a href={`${path}`} className="btn btn-main-ghost" target="_blank" rel="noopener noreferrer">
+			<Link to={`/${path}`} className="btn btn-main-ghost">
 				More Info
-			</a>
+			</Link>
 		);
 	}
-	return (
-		<Link to={`/${path}`} className="btn btn-main-ghost">
-			More Info
-		</Link>
-	);
 };
 
-export default ({ title, path, registrationsOpen, date, location, showMoreInfo }) => (
+const renderSignUpPath = (path, displayText) => {
+	if(path && displayText){
+		if (path.startsWith("http")) {
+			return (
+				<a href={`${path}`} className="btn btn-main-ghost" target="_blank" rel="noopener noreferrer">
+					{displayText}
+				</a>
+			);
+		}
+		return (
+			<Link to={`/${path}`} className="btn btn-main-ghost">
+				{displayText}
+			</Link>
+		);
+	}
+}
+
+export default ({ title, path, registrationsOpen, date, location, showMoreInfo, showSignUpNow, signUpNowPath, signUpDisplayText }) => (
 	<div className="col-sm-3 col-xs-8 event">
 		<div style={{ backgroundColor: `${registrationsOpen ? "#fff" : "rgba(20,20,20, 0.92"}` }}>
 			<h3
@@ -35,6 +54,7 @@ export default ({ title, path, registrationsOpen, date, location, showMoreInfo }
 				<li>{location}</li>
 			</ul>
 			<p className=" pddn-20-btm text-center">{showMoreInfo && renderMoreInfo(path)}</p>
+			<p className=" pddn-20-btm text-center">{showSignUpNow && renderSignUpPath(signUpNowPath, signUpDisplayText)}</p>
 		</div>
 	</div>
 );

@@ -1,5 +1,5 @@
 import React from "react";
-import speaker1 from "./speakers/Jordan.png";
+import speaker1 from "./speakers/Peter.png";
 
 export default () => (
 	<section id="speakers">
@@ -26,11 +26,11 @@ export default () => (
 								<img src={speaker1} width="300" height="300" alt="Speaker" className="img-responsive center-block" />
 								<figcaption>
 									<p>
-										Hey I'm Jordan! I'm a Youth Pastor up at EV Church on the Central Coast of NSW. I love drinking
-										coffee, playing music, watching pretty much any sport, and hanging out with my wife, Lauren, and
-										little dude, Percy. But most of all I love getting to chat with people about Jesus and dig into the
-										Bible. What he brings changes lives, offers real forgiveness and a sure hope of heaven forever - and
-										I reckon that's worth talking about!
+										Hey TYC! So keen to be with you guys in October. Any of you guys love music? For me, it's a gateway
+										to my soul. I'm really looking forward to opening up some of the most beautiful songs in the world
+										with you. I'm too old to be cool anymore, but still young enough that my kids Fyody, Rafael and
+										Elena don't realise yet. So keep that one to yourself. I love playing soccer, guitar and gaming but
+										mostly, I love it when I get to be with an honest person. Grab me for a chat.
 									</p>
 								</figcaption>
 							</figure>
@@ -39,19 +39,19 @@ export default () => (
 								<figcaption></figcaption>
 							</figure>
 							<p>
-								<span className="speaker-accent">Jordan Francis</span>
+								<span className="speaker-accent">Peter Kutuzov</span>
 								<br />
-								Youth Pastor,{" "}
-								<a className="redLink" href="https://evchurch.info" target="_blank" rel="noreferrer noopener">
-									EV Church
-								</a>
+								{/* Position,{" "}
+								<a className="redLink" href="" target="_blank" rel="noreferrer noopener">
+									Link
+								</a> */}
 							</p>
 							<p className="showForSM">
-								Hey I'm Jordan! I'm a Youth Pastor up at EV Church on the Central Coast of NSW. I love drinking coffee,
-								playing music, watching pretty much any sport, and hanging out with my wife, Lauren, and little dude,
-								Percy. But most of all I love getting to chat with people about Jesus and dig into the Bible. What he
-								brings changes lives, offers real forgiveness and a sure hope of heaven forever - and I reckon that's
-								worth talking about!
+								Hey TYC! So keen to be with you guys in October. Any of you guys love music? For me, it's a gateway to
+								my soul. I'm really looking forward to opening up some of the most beautiful songs in the world with
+								you. I'm too old to be cool anymore, but still young enough that my kids Fyody, Rafael and Elena don't
+								realise yet. So keep that one to yourself. I love playing soccer, guitar and gaming but mostly, I love
+								it when I get to be with an honest person. Grab me for a chat.
 							</p>
 						</div>
 					</div>
