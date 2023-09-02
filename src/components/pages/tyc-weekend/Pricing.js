@@ -37,6 +37,11 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
 								Register Your Group
 							</a>
 						</p>
+						<p className=" pddn-20-btm text-center">
+							<a href="https://form.jotform.com/232411548086859" target="_blank" rel="noopener noreferrer" className="btn btn-main-ghost">
+								TYC Merch
+							</a>
+						</p>
 					</div>
 				</div>
 				<div className="col-sm-3"></div>

@@ -18,7 +18,7 @@ const renderMoreInfo = (path) => {
 	}
 };
 
-const renderSignUpPath = (path, displayText) => {
+const renderExtraLinkPath = (path, displayText) => {
 	if(path && displayText){
 		if (path.startsWith("http")) {
 			return (
@@ -35,7 +35,24 @@ const renderSignUpPath = (path, displayText) => {
 	}
 }
 
-export default ({ title, path, registrationsOpen, date, location, showMoreInfo, showSignUpNow, signUpNowPath, signUpDisplayText }) => (
+const renderPadding = (extraLinks, maxExtraLinks) => {
+	if(extraLinks && extraLinks.length === maxExtraLinks)
+	{
+		console.log("rendering2")
+		return; //no padding needed
+	}
+	else if(extraLinks && extraLinks.length > 0)
+	{
+		return extraLinks.map((link, idx)=><p key={`padding-${idx}`} style={{paddingBottom: "60px"}}></p>)
+	}
+	else
+	{
+		console.log("else")
+		return <p key={`padding-extra`} style={{paddingBottom: `${60*maxExtraLinks}px`}}></p>
+	}
+}
+
+export default ({ title, path, registrationsOpen, date, location, showMoreInfo, extraLinks, maxExtraLinks }) => (
 	<div className="col-sm-3 col-xs-8 event">
 		<div style={{ backgroundColor: `${registrationsOpen ? "#fff" : "rgba(20,20,20, 0.92"}` }}>
 			<h3
@@ -54,7 +71,10 @@ export default ({ title, path, registrationsOpen, date, location, showMoreInfo, 
 				<li>{location}</li>
 			</ul>
 			<p className=" pddn-20-btm text-center">{showMoreInfo && renderMoreInfo(path)}</p>
-			<p className=" pddn-20-btm text-center">{showSignUpNow && renderSignUpPath(signUpNowPath, signUpDisplayText)}</p>
+			{extraLinks && extraLinks.length > 0 && extraLinks.map(extraLink => {
+				return <p className=" pddn-20-btm text-center">{renderExtraLinkPath(extraLink.link, extraLink.displayText)}</p>
+			})}
+			{renderPadding(extraLinks, maxExtraLinks)}
 		</div>
 	</div>
 );

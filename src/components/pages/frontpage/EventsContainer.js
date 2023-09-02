@@ -21,6 +21,7 @@ export default () => (
 					location="Launceston"
 					registrationsOpen={false}
 					showMoreInfo={true}
+					maxExtraLinks={2}
 				/>
 				<EventItem
 					title="Roadshow South"
@@ -29,6 +30,7 @@ export default () => (
 					location="Hobart"
 					registrationsOpen={false}
 					showMoreInfo={true}
+					maxExtraLinks={2}
 				/>
 				<EventItem
 					title="TYLT"
@@ -37,6 +39,7 @@ export default () => (
 					location="Launceston"
 					registrationsOpen={false}
 					showMoreInfo={true}
+					maxExtraLinks={2}
 				/>
 				<EventItem
 					title="TYC Weekend"
@@ -46,9 +49,11 @@ export default () => (
 					location="Bicheno"
 					registrationsOpen={true}
 					showMoreInfo={true}
-					showSignUpNow={true}
-					signUpNowPath="https://form.jotform.com/231877550172863"
-					signUpDisplayText={"Sign your group up now"}
+					extraLinks={[
+						{link: "https://form.jotform.com/231877550172863", displayText: "Sign your group up now"},
+						{link: "https://form.jotform.com/232411548086859", displayText: "TYC Merch"},
+					]}
+					maxExtraLinks={2}
 				/>
 			</div>
 		</div>
