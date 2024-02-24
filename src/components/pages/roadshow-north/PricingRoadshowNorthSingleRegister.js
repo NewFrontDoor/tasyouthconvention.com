@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import splash2 from "../../../images/Background.jpg";
 
 export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird, currentPrice, leaderPrice }) => (
@@ -11,7 +11,7 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
 						<h2 className="text-center">
 							<span>Registration</span>
 						</h2>
-						<p className="subtitle white text-center">Register here for Roadshow South</p>
+						<p className="subtitle white text-center">Register here for Roadshow North</p>
 						<p className="subtitle text-center">
 							<i className="fa fa-angle-down fa-lg white"></i>
 						</p>
@@ -20,53 +20,24 @@ export default ({ loading, registrationsOpen, registrationStartDate, isEarlyBird
 			</div>
 
 			<div className="row">
+				<div className="col-sm-3 hideForMobile"></div>
 				<div className="col-sm-6">
 					<div className="white-bg">
-						{isEarlyBird && (
-							<div className="ribbon-wrapper-dark">
-								<div className="ribbon-dark">Early Bird</div>
-							</div>
-						)}
-						<h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register for Roadshow South</h3>
+						<h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register for Roadshow North</h3>
 						<div className="accent-bg pddn-20-top-btm text-center">
-							<p className="price">
+							{/* <p className="price">
 								$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : currentPrice}</span>
-							</p>
+							</p> */}
 						</div>
 						<ul className="list-pricing">
 							<li>Register here to book and pay</li>
-							<li>for Roadshow South</li>
+							<li>for Roadshow North</li>
 							<li>&nbsp;</li>
 						</ul>
 						<p className="pddn-20-btm text-center">
-							<Link to="/roadshow-south/register" className="btn btn-main-ghost">
-								Register for Roadshow South
-							</Link>
-						</p>
-					</div>
-				</div>
-				<div className="col-sm-6">
-					<div className="white-bg">
-						{isEarlyBird && (
-							<div className="ribbon-wrapper-dark">
-								<div className="ribbon-dark">Early Bird</div>
-							</div>
-						)}
-						<h3 className="text-uppercase text-center pddn-20-top pddn-10-btm">Register Your Group</h3>
-						<div className="accent-bg pddn-20-top-btm text-center">
-							<p className="price">
-								$<span className="text-bigger">{loading ? <i className="fa fa-spinner"></i> : leaderPrice}</span>
-							</p>
-						</div>
-						<ul className="list-pricing">
-							<li>If you are a youth leader </li>
-							<li>Register here. This will also register your </li>
-							<li>Youth Group if they're not already registered</li>
-						</ul>
-						<p className=" pddn-20-btm text-center">
-							<Link to="/roadshow-south/register-group" className="btn btn-main-ghost">
-								Register As a Leader
-							</Link>
+							<a href="https://form.jotform.com/240438479369874" className="btn btn-main-ghost">
+								Register for Roadshow North
+							</a>
 						</p>
 					</div>
 				</div>

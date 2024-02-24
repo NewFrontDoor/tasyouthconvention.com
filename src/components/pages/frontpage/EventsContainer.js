@@ -19,18 +19,20 @@ export default () => (
 					path="roadshow-north"
 					date="24th March 2023"
 					location="Launceston"
-					registrationsOpen={false}
+					registrationsOpen={true}
 					showMoreInfo={true}
 					maxExtraLinks={2}
+					extraLinks={[{ link: "https://form.jotform.com/240438479369874", displayText: "Register here" }]}
 				/>
 				<EventItem
 					title="Roadshow South"
 					path="roadshow-south"
-					date="31st March 2023"
+					date="22nd March 2024"
 					location="Hobart"
-					registrationsOpen={false}
+					registrationsOpen={true}
 					showMoreInfo={true}
 					maxExtraLinks={2}
+					extraLinks={[{ link: "https://form.jotform.com/240438479369874", displayText: "Register here" }]}
 				/>
 				<EventItem
 					title="TYLT"
@@ -47,11 +49,11 @@ export default () => (
 					path="tyc-weekend"
 					date="October 2023"
 					location="Bicheno"
-					registrationsOpen={true}
+					registrationsOpen={false}
 					showMoreInfo={true}
 					extraLinks={[
-						{link: "https://form.jotform.com/231877550172863", displayText: "Sign your group up now"},
-						{link: "https://form.jotform.com/232411548086859", displayText: "TYC Merch"},
+						{ link: "https://form.jotform.com/231877550172863", displayText: "Sign your group up now" },
+						{ link: "https://form.jotform.com/232411548086859", displayText: "TYC Merch" }
 					]}
 					maxExtraLinks={2}
 				/>
